@@ -38,9 +38,7 @@ body{
 	background-color: #fff;
 	color: #767676;
 }
-body::-webkit-scrollbar{
-  width: 0px;
-}
+
 svg {
 	fill: currentcolor;
 	width: 30px;
