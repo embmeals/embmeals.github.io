@@ -41,14 +41,14 @@ body{
 body::-webkit-scrollbar{
   width: 0px;
 }
-svg{
+svg {
 	fill: currentcolor;
-	width: 15px;
-	height: 15px;
+	width: 30px;
+	height: 30px;
 }
 img.svg{
-	width: 15px;
-	height: 15px;
+	width: 30px;
+	height: 30px;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #6f6f6f;
@@ -709,38 +709,40 @@ h6 { font-size: 16px; }
 	visibility: visible;
 	margin-top: 0px;
 }
-.tokyo_tm_modalbox_about .close{
-	position: fixed;
-	left: 100%;
-	top: 0px;
-	margin-left: 30px;
-	z-index: 10;
-}
-.tokyo_tm_modalbox_about .close a{
-	display: block;
-	width: 40px;
-	height: 40px;
-	text-decoration: none;
-	color: #fff;
-	border:2px solid #fff;
-	border-radius: 10px;
-	position: relative;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
+	.tokyo_tm_modalbox_about .close {
+		position: fixed;
+		left: 100%;
+		top: 0px;
+		width: 30px !important;
+		height: 30px !important;
+		margin-left: 30px;
+		z-index: 10;
+	}
+	.tokyo_tm_modalbox_about .close a {
+		display: block;
+		width: 30px !important;
+		height: 30px !important;
+		text-decoration: none;
+		color: #fff;
+		border-radius: 10px;
+		position: relative;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;
+	}
 .tokyo_tm_modalbox_about .close a:hover{
 	border-radius: 100%;
 }
-.tokyo_tm_modalbox_about .close a i{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
+		.tokyo_tm_modalbox_about .close a i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 30px !important;
+			height: 30px !important;
+			transform: translate(-50%,-50%);
+		}
 .tokyo_tm_modalbox_about .description_wrap{
 	position: relative;
 	width: 100%;
