@@ -125,7 +125,7 @@ function tokyo_tm_modalbox_about() {
 
 	$(document).ready(function () {
 		$('.close').click(function () {
-			$(modalBox).removeClass('opened');
+			$(modalBox).removeClass('opened').addClass('closed');
 		})
 	});
 }
