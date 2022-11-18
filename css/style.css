@@ -1905,3 +1905,71 @@ body.modal{
 	.tokyo_tm_modalbox .description_wrap{padding: 20px;}
 	.tokyo_tm_about .description .name{font-size: 18px;}
 }
+@media (max-width: 400px) {
+	.tokyo_tm_home .details .name {
+		font-size: 15px;
+	}
+	.tokyo_tm_home .avatar {
+		min-width: 100px;
+		min-height: 100px;
+	}
+	.tokyo_tm_portfolio .portfolio_list {
+		margin: 0px;
+	}
+		.tokyo_tm_portfolio .portfolio_list li {
+			width: 100%;
+			padding-left: 0px;
+		}
+	.tokyo_tm_news ul {
+		margin: 0px;
+	}
+		.tokyo_tm_news ul li {
+			width: 100%;
+			padding-left: 0px;
+		}
+	.tokyo_tm_modalbox .main_content .icon {
+		position: absolute;
+		margin-bottom: 25px;
+	}
+	.tokyo_tm_modalbox .main_content .quotebox {
+		padding-left: 0px;
+	}
+	.tokyo_tm_modalbox_about .close a {
+		width: 30px;
+		height: 30px;
+		font-size: 14px;
+	}
+	.tokyo_tm_modalbox_about .close {
+		left: auto;
+		right: 0px;
+		top: -40px;
+	}
+	.tokyo_tm_modalbox .close a {
+		width: 30px;
+		height: 30px;
+		font-size: 14px;
+	}
+	.tokyo_tm_modalbox .close {
+		left: auto;
+		right: 0px;
+		top: -40px;
+	}
+	.tokyo_tm_modalbox_about .counter ul {
+		margin: 0px;
+	}
+		.tokyo_tm_modalbox_about .counter ul li {
+			padding-left: 0px;
+		}
+	.tokyo_tm_modalbox .box_inner {
+		width: 200px;
+	}
+	.tokyo_tm_modalbox_about .box_inner {
+		width: 200px;
+	}
+	.tokyo_tm_modalbox .description_wrap {
+		padding: 18px;
+	}
+	.tokyo_tm_about .description .name {
+		font-size: 15px;
+	}
+}
