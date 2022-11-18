@@ -114,21 +114,20 @@ function tokyo_tm_trigger_menu(){
 // -------------  MODALBOX ABOUT  ------------------
 // -------------------------------------------------
 
-function tokyo_tm_modalbox_about(){
-	
-	"use strict";
-	
-	var modalBox	= jQuery('.tokyo_tm_modalbox_about');
-	var opener		= jQuery('.tokyo_tm_about .tokyo_tm_button a');
-	var closer		= modalBox.find('.close');
-	
-	opener.on('click',function(){
-		modalBox.addClass('opened');
-		return false;
+
+function tokyo_tm_modalbox_about() {
+	var modalBox = jQuery('.tokyo_tm_modalbox_about');
+
+	$(document).ready(function () {
+		$('.tokyo_tm_about .tokyo_tm_button a').click(function () {
+			$(modalBox).addClass('opened');
+		})
 	});
-	closer.on('click',function(){
-		modalBox.removeClass('opened');
-		return false;
+
+	$(document).ready(function () {
+		$('.close').click(function () {
+			$(modalBox).removeClass('opened');
+		})
 	});
 }
 
