@@ -114,7 +114,6 @@ function tokyo_tm_trigger_menu(){
 // -------------  MODALBOX ABOUT  ------------------
 // -------------------------------------------------
 
-
 function tokyo_tm_modalbox_about() {
 	var modalBox = jQuery('.tokyo_tm_modalbox_about');
 
@@ -130,7 +129,6 @@ function tokyo_tm_modalbox_about() {
 		})
 	});
 }
-
 
 // -------------------------------------------------
 // -----------------    PORTFOLIO    ---------------
