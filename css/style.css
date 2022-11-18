@@ -22,17 +22,18 @@
 /*---------------------------------------------------*/
 
 html {
-	overflow-x: hidden;
+	overflow: hidden;
 	padding: 0px;
 	margin: 0px
 }
-body{
+body {
 	font-family: "Mulish";
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.5px;
 	word-wrap: break-word;
 	font-weight: 400;
+    overflow: hidden;
 	background-color: #fff;
 	color: #767676;
 }
@@ -657,7 +658,7 @@ h6 { font-size: 16px; }
 	letter-spacing: 2px;
 }
 .tokyo_tm_modalbox_about{
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	left: 0px;
 	right: 0px;
