@@ -90,8 +90,9 @@ function tokyo_tm_trigger_menu(){
 	var mobileMenu		= jQuery('.tokyo_tm_mobile_menu');
 	var mobileMenuList	= jQuery('.tokyo_tm_mobile_menu ul li a');
 
-	hamburger.on('click',function(){
-		var element 	= jQuery(this);
+	hamburger.on('click', function () {
+		var self = this; 
+		var element 	= jQuery(self);
 
 		if(element.hasClass('is-active')){
 			element.removeClass('is-active');
@@ -102,6 +103,7 @@ function tokyo_tm_trigger_menu(){
 		}
 		return false;
 	});
+
 	
 	mobileMenuList.on('click',function(){
 		jQuery('.tokyo_tm_topbar .trigger .hamburger').removeClass('is-active');
@@ -117,13 +119,13 @@ function tokyo_tm_trigger_menu(){
 function tokyo_tm_modalbox_about() {
 	var modalBox = jQuery('.tokyo_tm_modalbox_about');
 
-	$(document).ready(function () {
+	$(function () {
 		$('.tokyo_tm_about .tokyo_tm_button a').click(function () {
 			$(modalBox).addClass('opened');
 		})
 	});
 
-	$(document).ready(function () {
+	$(function () {
 		$('.close').click(function () {
 			$(modalBox).removeClass('opened').addClass('closed');
 		})
