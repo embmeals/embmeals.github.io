@@ -58,7 +58,7 @@ svg {
     height: 30px;
 }
 
-img {
+.portfolioGif img {
     width: 100px;
     height: 250px;
     object-fit: cover;
