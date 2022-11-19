@@ -58,6 +58,12 @@ svg {
     height: 30px;
 }
 
+img {
+    width: 100px;
+    height: 250px;
+    object-fit: cover;
+}
+
 img.svg {
     width: 30px;
     height: 30px;
@@ -1591,7 +1597,7 @@ h6 {
 
 .tokyo_tm_read_more {
     width: 100%;
-    height: auto;
+    height: 20px;
     clear: both;
     float: left;
     position: relative;
