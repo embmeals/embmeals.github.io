@@ -1511,7 +1511,7 @@ h6 {
             .tokyo_tm_news ul li .details {
                 width: 100%;
                 float: left;
-                padding: 30px 40px 25px 40px;
+                padding: 1px 20px 5px 20px !important;
                 background-color: #fff;
                 -webkit-transition: all .3s ease;
                 -moz-transition: all .3s ease;
