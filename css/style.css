@@ -1651,8 +1651,13 @@ h6 {
     animation-timing-function: cubic-bezier(.6,.01,0,1);
 }
 
-.tokyo_tm_news ul li .list_inner:hover .tokyo_tm_read_more a span {
+.tokyo_tm_news ul li .list_inner:focus .tokyo_tm_read_more a span {
     transform: translateX(0%);
+ 
+}
+
+.tokyo_tm_read_more a span:hover {
+    color: #00bfb2 !important;
 }
 
 @keyframes read-more-anim {
