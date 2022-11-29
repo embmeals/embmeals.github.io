@@ -90,6 +90,7 @@ function tokyo_tm_trigger_menu(){
 	var mobileMenu		= jQuery('.tokyo_tm_mobile_menu');
 	var mobileMenuList	= jQuery('.tokyo_tm_mobile_menu ul li a');
 
+
 	hamburger.on('click', function () {
 		var self = this; 
 		var element 	= jQuery(self);
