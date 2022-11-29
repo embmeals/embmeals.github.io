@@ -3147,6 +3147,7 @@ h6 {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+            border-radius: 2rem;
         }
 
         .tokyo_tm_about .about_image img {
