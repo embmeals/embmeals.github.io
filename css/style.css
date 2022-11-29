@@ -830,7 +830,7 @@ h6 {
         height: 30px !important;
         margin-left: 30px;
         z-index: 10;
-        fill: white;
+        fill: rgb(204, 214, 246);
     }
 
         .tokyo_tm_modalbox_about .close a {
@@ -846,7 +846,7 @@ h6 {
             -ms-transition: all .3s ease;
             -o-transition: all .3s ease;
             transition: all .3s ease;
-            fill: white;
+            fill: rgb(204, 214, 246);
         }
 
             .tokyo_tm_modalbox_about .close a:hover {
