@@ -35,8 +35,8 @@ body {
     letter-spacing: 0.5px;
     word-wrap: break-word;
     font-weight: 400;
-    background-color: #fff;
-    color: #767676;
+    background-color: rgb(29, 30, 34);
+    color: rgb(29, 30, 34);
 }
 
 .tokyo_tm_modalbox.closed {
@@ -504,12 +504,14 @@ h6 {
     -moz-transition: visibility 1s linear, opacity 0s linear;
     -webkit-transition: visibility1s linear, opacity 0s linear;
     -o-transition: visibility 1s linear, opacity 0s linear;
+    background-color: #0a192f;
 }
 
     .tokyo_tm_section.animated {
         opacity: 1;
         visibility: visible;
         z-index: 9;
+        background-color: #0a192f;
     }
 
     .tokyo_tm_section.active {
@@ -2860,7 +2862,7 @@ h6 {
     align-items: center;
     z-index: 12;
     padding: 0px 100px;
-    background-color: #fff;
+    background-color: rgb(17, 34, 64);
 }
 
 .tokyo_tm_all_wrap .leftpart_inner {
@@ -2990,6 +2992,7 @@ h6 {
         opacity: 1;
         visibility: visible;
         z-index: 10;
+        background-color: #0a192f;
     }
 
     .tokyo_tm_section.hidden {
@@ -3042,6 +3045,7 @@ h6 {
             -webkit-box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
             -moz-box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
             box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
+            background-color: transparent;
         }
 
 @keyframes morph {

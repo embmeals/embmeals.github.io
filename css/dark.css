@@ -64,9 +64,9 @@ body.dark{
 body.dark h1,body.dark h2,body.dark h3,body.dark h4,body.dark h5,body.dark h6{
 	color: #fff;
 }
-body.dark .tokyo_tm_all_wrap .leftpart{
-	background-color: #494b50;
-}
+	body.dark .tokyo_tm_all_wrap .leftpart {
+        background-color: rgb(17, 34, 64);
+    }
 body.dark .tokyo_tm_all_wrap .leftpart .menu ul li a{
 	color: #bbb;
 }
@@ -126,9 +126,9 @@ body.dark .cursor-outer {
   transition: all .08s ease-out;
 }
 body.dark .cursor-outer.cursor-hover{opacity: 0;}
-body.dark .tokyo_tm_topbar{
-	background-color: #494b50;
-}
+	body.dark .tokyo_tm_topbar {
+        background-color: rgb(17, 34, 64);
+    }
 body.dark .hamburger-inner, 
 body.dark .hamburger-inner:after, 
 body.dark .hamburger-inner:before{
@@ -139,9 +139,9 @@ body.dark .hamburger.is-active .hamburger-inner:after,
 body.dark .hamburger.is-active .hamburger-inner:before{
 	background-color: #fff;
 }
-body.dark .tokyo_tm_mobile_menu{
-	background-color: #494b50;
-}
+	body.dark .tokyo_tm_mobile_menu {
+        background-color: rgb(17, 34, 64);
+	}
 body.dark .tokyo_tm_mobile_menu .menu_list ul li a{
 	color: #fff;
 }
