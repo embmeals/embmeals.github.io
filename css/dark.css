@@ -91,9 +91,11 @@ body.dark .tokyo_tm_all_wrap .leftpart .copyright a:hover{
 body.dark .tokyo_tm_all_wrap .rightpart_in{
 	border-left: none;
 }
-body.dark .tokyo_tm_home .social ul li a{
-	color: #fff;
-}
+
+	body.dark .tokyo_tm_home .social ul li a {
+		color: rgb(17, 34, 64);
+	}
+
 body.dark .cursor-inner {
   margin-left: -3px;
   margin-top: -3px;
