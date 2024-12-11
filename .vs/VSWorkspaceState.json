@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\downloads"
+    "\\downloads",
+    "\\img",
+    "\\img\\svg",
+    "\\img\\svg\\icons8"
   ],
+  "SelectedNode": "\\img\\svg\\icons8\\icons8-c-sharp-logo-2-48.svg",
   "PreviewInSolutionExplorer": false
 }
