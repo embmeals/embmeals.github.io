@@ -22,26 +22,32 @@
 /*---------------------------------------------------*/
 
 
-.avatar .image {
+.avatar {
     position: relative;
-    width: 200px; /* Adjust size as needed */
-    height: 200px; /* Adjust size as needed */
-    background-image: url('img/about/avatar.png'); /* Dynamically applied image */
-    background-size: cover;
-    background-position: center;
+    display: inline-block;
 }
 
-/* Overlay effect for hair color */
-.avatar .image::after {
-    content: '';
+.hair {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 0, 0, 0.5); /* Replace with desired overlay color */
-    mix-blend-mode: multiply; /* Experiment with modes like overlay or screen */
-    pointer-events: none; /* Ensure it doesn't block interactions */
+    top: 10%; /* Adjust to fit hair position */
+    left: 15%; /* Adjust to fit hair position */
+    width: 70%; /* Adjust to fit hair width */
+    height: 20%; /* Adjust to fit hair height */
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
 }
 
 html {
