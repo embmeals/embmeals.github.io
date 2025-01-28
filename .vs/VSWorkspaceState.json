@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css",
+    "\\img",
+    "\\img\\about",
     "\\project-gifs"
   ],
-  "SelectedNode": "\\project-gifs",
   "PreviewInSolutionExplorer": false
 }
