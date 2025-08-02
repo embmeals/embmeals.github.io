@@ -356,7 +356,7 @@ h6 {
     clear: both;
     float: right;
     text-align: left;
-    padding: 100px 20px 0px 20px;
+    padding: 100px 20px 0 20px;
 }
 
 .tokyo_tm_mobile_menu .menu_list ul {
@@ -491,10 +491,10 @@ h6 {
 
 .tokyo_tm_section {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
     overflow-y: scroll;
     opacity: 0;
@@ -527,7 +527,7 @@ h6 {
 }
 
 .tokyo_tm_section::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
 }
 
 /*---------------------------------------------------*/
@@ -613,7 +613,7 @@ h6 {
 }
 
 .tokyo_tm_home .social ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
 }
 
@@ -796,7 +796,7 @@ h6 {
 .tokyo_tm_modalbox_about.opened .box_inner {
     opacity: 1;
     visibility: visible;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .tokyo_tm_modalbox_about .close {
@@ -901,11 +901,11 @@ h6 {
 }
 
 .progress_inner:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .progress_inner > span {
-    margin: 0px 0px 5px 0px;
+    margin: 0 0 5px 0;
     width: 100%;
     display: block;
     text-align: left;
@@ -928,12 +928,12 @@ h6 {
 .progress_inner .background .bar_in {
     height: 100%;
     background: #000;
-    width: 0px;
+    width: 0;
     overflow: hidden;
 }
 
 .progress_inner .background .bar {
-    width: 0px;
+    width: 0;
     height: 100%;
 }
 
@@ -986,7 +986,7 @@ h6 {
 }
 
 .tokyo_tm_modalbox_about .counter ul {
-    margin: 0px 0px 42px -50px;
+    margin: 0 0 42px -50px;
     list-style-type: none;
     padding-top: 45px;
     display: flex;
@@ -994,7 +994,7 @@ h6 {
 }
 
 .tokyo_tm_modalbox_about .counter ul li {
-    margin: 0px 0px 50px 0px;
+    margin: 0 0 50px 0;
     width: 33.3333%;
     float: left;
     padding-left: 50px;
@@ -1074,7 +1074,7 @@ h6 {
     font-size: 12px;
     color: #333;
     font-family: "Montserrat";
-    letter-spacing: 0px;
+    letter-spacing: 0;
     margin-bottom: 11px;
 }
 
@@ -1307,7 +1307,7 @@ h6 {
 }
 
 .tokyo_tm_modalbox .main_details .textbox p:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox {
@@ -1316,18 +1316,18 @@ h6 {
 }
 
 .tokyo_tm_modalbox .main_details .detailbox > ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox > ul > li {
-    margin: 0px 0px 8px 0px;
+    margin: 0 0 8px 0;
     width: 100%;
     float: left;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox > ul > li:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .first {
@@ -1354,19 +1354,19 @@ h6 {
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .share {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
     position: relative;
     top: 7px;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .share li {
-    margin: 0px 5px 0px 0px;
+    margin: 0 5px 0 0;
     display: inline-block;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .share li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .share li a {
@@ -1383,12 +1383,12 @@ h6 {
 }
 
 .tokyo_tm_modalbox .additional_images ul {
-    margin: 0px 0px 0px -30px;
+    margin: 0 0 0 -30px;
     list-style-type: none;
 }
 
 .tokyo_tm_modalbox .additional_images ul li {
-    margin: 0px 0px 30px 0px;
+    margin: 0 0 30px 0;
     float: left;
     width: 50%;
     padding-left: 30px;
@@ -1417,10 +1417,10 @@ h6 {
 
 .tokyo_tm_modalbox .additional_images ul li .my_image .main {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1435,16 +1435,16 @@ h6 {
     height: auto;
     clear: both;
     float: left;
-    padding: 100px 0px 45px 0px;
+    padding: 100px 0 45px 0;
 }
 
 .tokyo_tm_news ul {
-    margin: 0px 0px 0px -50px;
+    margin: 0 0 0 -50px;
     list-style-type: none;
 }
 
 .tokyo_tm_news ul li {
-    margin: 0px 0px 50px 0px;
+    margin: 0 0 50px 0;
     float: left;
     width: 50%;
     padding-left: 50px;
@@ -1456,7 +1456,7 @@ h6 {
     clear: both;
     float: left;
     position: relative;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, .07);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .07);
 }
 
 .tokyo_tm_news ul li .image {
@@ -1471,10 +1471,10 @@ h6 {
 
 .tokyo_tm_news ul li .image .main {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1502,7 +1502,7 @@ h6 {
 }
 
 .tokyo_tm_news ul li .list_inner:hover .details {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .12);
 }
 
 .tokyo_tm_news ul li .details .title {
@@ -1560,7 +1560,7 @@ h6 {
     position: relative;
     content: "/";
     font-size: 10px;
-    padding: 0px 7px 0px 2px;
+    padding: 0 7px 0 2px;
 }
 
 .tokyo_tm_news ul li .extra {
@@ -1609,9 +1609,9 @@ h6 {
     margin: auto;
     width: 100%;
     height: 1px;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
+    top: 0;
+    left: 0;
+    bottom: 0;
     transform: scaleX(.2);
     transform-origin: left center;
     animation: read-more-anim;
@@ -1709,18 +1709,18 @@ h6 {
 
 .tokyo_tm_full_link {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 4;
 }
 
 .tokyo_tm_modalbox {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 100vh;
     z-index: 15;
     background-color: rgba(0, 0, 0, .8);
@@ -1765,13 +1765,13 @@ h6 {
 .tokyo_tm_modalbox.opened .box_inner {
     opacity: 1;
     visibility: visible;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .tokyo_tm_modalbox .close {
     position: fixed;
     left: 100%;
-    top: 0px;
+    top: 0;
     margin-left: 30px;
     z-index: 10;
 }
@@ -1831,10 +1831,10 @@ h6 {
 
 .tokyo_tm_modalbox .description_wrap .image .main {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1876,7 +1876,7 @@ h6 {
 .tokyo_tm_modalbox .date span:before {
     position: absolute;
     content: "";
-    margin-top: 0px;
+    margin-top: 0;
     top: 50%;
     transform: translateY(-50%) rotate(15deg);
     right: 100%;
@@ -1919,7 +1919,7 @@ body.modal {
 }
 
 .tokyo_tm_modalbox .main_content .descriptions p:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .tokyo_tm_modalbox .main_content .quotebox {
@@ -1940,7 +1940,7 @@ body.modal {
 
 .tokyo_tm_modalbox .main_content .icon {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 5px;
 }
 
@@ -1977,7 +1977,7 @@ body.modal {
     height: auto;
     clear: both;
     float: left;
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0 100px 0;
 }
 
 .tokyo_tm_contact .map_wrap {
@@ -2007,13 +2007,13 @@ body.modal {
 }
 
 .tokyo_tm_contact .fields ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
 }
 
 .tokyo_tm_contact .fields ul li {
     width: 100%;
-    margin: 0px 0px 30px 0px;
+    margin: 0 0 30px 0;
     float: left;
 }
 
@@ -2161,7 +2161,7 @@ body.modal {
     }
 
     .tokyo_tm_section {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_all_wrap .leftpart {
@@ -2169,7 +2169,7 @@ body.modal {
     }
 
     .tokyo_tm_all_wrap .rightpart {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_all_wrap .rightpart_in {
@@ -2205,22 +2205,22 @@ body.modal {
     }
 
     .tokyo_tm_modalbox .main_details .textbox {
-        padding-right: 0px;
+        padding-right: 0;
         width: 100%;
         margin-bottom: 30px;
     }
 
     .tokyo_tm_modalbox .main_details .detailbox {
-        padding-left: 0px;
+        padding-left: 0;
         width: 100%;
     }
 
     .tokyo_tm_modalbox .additional_images ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_modalbox .additional_images ul li {
-        padding-left: 0px;
+        padding-left: 0;
         width: 100%;
     }
 
@@ -2238,13 +2238,13 @@ body.modal {
 
     .tokyo_tm_modalbox_about .my_box .left {
         width: 100%;
-        padding-right: 0px;
+        padding-right: 0;
         margin-bottom: 50px;
     }
 
     .tokyo_tm_modalbox_about .my_box .right {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 }
 
@@ -2291,7 +2291,7 @@ body.modal {
     }
 
     .container {
-        padding: 0px 20px;
+        padding: 0 20px;
     }
 }
 
@@ -2306,21 +2306,21 @@ body.modal {
     }
 
     .tokyo_tm_portfolio .portfolio_list {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_portfolio .portfolio_list li {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_news ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_news ul li {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox .main_content .icon {
@@ -2329,7 +2329,7 @@ body.modal {
     }
 
     .tokyo_tm_modalbox .main_content .quotebox {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox_about .close a {
@@ -2340,7 +2340,7 @@ body.modal {
 
     .tokyo_tm_modalbox_about .close {
         left: auto;
-        right: 0px;
+        right: 0;
         top: -40px;
     }
 
@@ -2352,17 +2352,17 @@ body.modal {
 
     .tokyo_tm_modalbox .close {
         left: auto;
-        right: 0px;
+        right: 0;
         top: -40px;
     }
 
     .tokyo_tm_modalbox_about .counter ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_modalbox_about .counter ul li {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox .box_inner {
@@ -2393,16 +2393,16 @@ body.modal {
     }
 
     .tokyo_tm_portfolio .portfolio_list {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_portfolio .portfolio_list li {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_news ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_modalbox .main_content .icon {
@@ -2411,7 +2411,7 @@ body.modal {
     }
 
     .tokyo_tm_modalbox .main_content .quotebox {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox_about .close a {
@@ -2422,7 +2422,7 @@ body.modal {
 
     .tokyo_tm_modalbox_about .close {
         left: auto;
-        right: 0px;
+        right: 0;
         top: -40px;
     }
 
@@ -2434,16 +2434,16 @@ body.modal {
 
     .tokyo_tm_modalbox .close {
         left: auto;
-        right: 0px;
+        right: 0;
         top: -40px;
     }
 
     .tokyo_tm_modalbox_about .counter ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_modalbox_about .counter ul li {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox .box_inner {
@@ -2488,8 +2488,8 @@ body.modal {
 
 html {
     overflow: hidden;
-    padding: 0px;
-    margin: 0px
+    padding: 0;
+    margin: 0
 }
 
 body {
@@ -2559,7 +2559,7 @@ img.svg {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    padding: 0px 40px;
+    padding: 0 40px;
     position: relative;
     clear: both;
 }
@@ -2745,9 +2745,9 @@ h6 {
 
 .tokyo_tm_topbar {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 50px;
     background-color: #fff;
     z-index: 14;
@@ -2761,7 +2761,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .tokyo_tm_topbar .logo img {
@@ -2770,7 +2770,7 @@ h6 {
 }
 
 .tokyo_tm_topbar .hamburger {
-    padding: 0px;
+    padding: 0;
 }
 
 .tokyo_tm_topbar .hamburger-inner,
@@ -2805,7 +2805,7 @@ h6 {
 }
 
 .tokyo_tm_mobile_menu.opened {
-    left: 0px;
+    left: 0;
 }
 
 .tokyo_tm_mobile_menu .menu_list {
@@ -2814,16 +2814,16 @@ h6 {
     clear: both;
     float: right;
     text-align: left;
-    padding: 100px 20px 0px 20px;
+    padding: 100px 20px 0 20px;
 }
 
 .tokyo_tm_mobile_menu .menu_list ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
 }
 
 .tokyo_tm_mobile_menu .menu_list ul li {
-    margin: 0px 0px 7px 0px;
+    margin: 0 0 7px 0;
 }
 
 .tokyo_tm_mobile_menu .menu_list ul li a {
@@ -2984,7 +2984,7 @@ h6 {
 }
 
 .tokyo_tm_section::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
 }
 
 /*---------------------------------------------------*/
@@ -3015,18 +3015,18 @@ h6 {
 
 .tokyo_tm_home .avatar .image {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     animation: morph 8s ease-in-out infinite 1s;
     background-blend-mode: multiply;
-    -webkit-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
-    -moz-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
-    box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, .3);
+    -webkit-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
+    -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
+    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
     background-color: transparent;
 }
 
@@ -3069,17 +3069,17 @@ h6 {
 }
 
 .tokyo_tm_home .social ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
 }
 
 .tokyo_tm_home .social ul li {
-    margin: 0px 8px 0px 0px;
+    margin: 0 8px 0 0;
     display: inline-block;
 }
 
 .tokyo_tm_home .social ul li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .tokyo_tm_home .social ul li a {
@@ -3121,10 +3121,10 @@ h6 {
 
 .tokyo_tm_about .about_image .main {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -3133,7 +3133,7 @@ h6 {
 
 .tokyo_tm_about .about_image img {
     min-width: 100%;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .12);
 }
 
 .tokyo_tm_about .description {
@@ -3166,7 +3166,7 @@ h6 {
     transition: all 0.3s ease !important;
     position: relative !important;
     display: inline-block !important;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1), 4px 4px 5px 0 rgba(0, 0, 0, .1);
     outline: none;
     text-decoration: none !important;
 }
@@ -3187,7 +3187,7 @@ h6 {
     z-index: -1;
     background-color: #663dff;
     border-radius: 5px;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1), 4px 4px 5px 0 rgba(0, 0, 0, .1);
     transition: all 0.3s ease;
 }
 
@@ -3221,12 +3221,12 @@ h6 {
 }
 
 .tokyo_tm_about .description .right > ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
 }
 
 .tokyo_tm_about .description .right > ul > li {
-    margin: 0px;
+    margin: 0;
     width: 100%;
     float: left;
 }
@@ -3257,9 +3257,9 @@ h6 {
 
 .tokyo_tm_modalbox_about {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 100vh;
     z-index: 15;
     background-color: rgba(0, 0, 0, .8);
@@ -3304,13 +3304,13 @@ h6 {
 .tokyo_tm_modalbox_about.opened .box_inner {
     opacity: 1;
     visibility: visible;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .tokyo_tm_modalbox_about .close {
     position: fixed;
     left: 100%;
-    top: 0px;
+    top: 0;
     width: 30px !important;
     height: 30px !important;
     margin-left: 30px;
@@ -3407,11 +3407,11 @@ h6 {
 }
 
 .progress_inner:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .progress_inner > span {
-    margin: 0px 0px 5px 0px;
+    margin: 0 0 5px 0;
     width: 100%;
     display: block;
     text-align: left;
@@ -3434,12 +3434,12 @@ h6 {
 .progress_inner .background .bar_in {
     height: 100%;
     background: #000;
-    width: 0px;
+    width: 0;
     overflow: hidden;
 }
 
 .progress_inner .background .bar {
-    width: 0px;
+    width: 0;
     height: 100%;
 }
 
@@ -3492,7 +3492,7 @@ h6 {
 }
 
 .tokyo_tm_modalbox_about .counter ul {
-    margin: 0px 0px 42px -50px;
+    margin: 0 0 42px -50px;
     list-style-type: none;
     padding-top: 45px;
     display: flex;
@@ -3500,7 +3500,7 @@ h6 {
 }
 
 .tokyo_tm_modalbox_about .counter ul li {
-    margin: 0px 0px 50px 0px;
+    margin: 0 0 50px 0;
     width: 33.3333%;
     float: left;
     padding-left: 50px;
@@ -3535,13 +3535,13 @@ h6 {
 }
 
 .tokyo_tm_modalbox_about .partners ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
     padding-top: 15px;
 }
 
 .tokyo_tm_modalbox_about .partners ul li {
-    margin: 0px;
+    margin: 0;
     opacity: .5;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -3580,7 +3580,7 @@ h6 {
     font-size: 12px;
     color: #333;
     font-family: "Montserrat";
-    letter-spacing: 0px;
+    letter-spacing: 0;
     margin-bottom: 11px;
 }
 
@@ -3594,17 +3594,17 @@ h6 {
 }
 
 .tokyo_tm_portfolio .portfolio_filter ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
 }
 
 .tokyo_tm_portfolio .portfolio_filter ul li {
-    margin: 0px 25px 0px 0px;
+    margin: 0 25px 0 0;
     display: inline-block;
 }
 
 .tokyo_tm_portfolio .portfolio_filter ul li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .tokyo_tm_portfolio .portfolio_filter ul li a {
@@ -3642,16 +3642,16 @@ h6 {
     height: auto;
     clear: both;
     float: left;
-    padding: 100px 0px 50px 0px;
+    padding: 100px 0 50px 0;
 }
 
 .tokyo_tm_portfolio .portfolio_list {
-    margin: 0px 0px 0px -50px;
+    margin: 0 0 0 -50px;
     list-style-type: none;
 }
 
 .tokyo_tm_portfolio .portfolio_list li {
-    margin: 0px 0px 50px 0px;
+    margin: 0 0 50px 0;
     float: left;
     width: 50%;
     padding-left: 50px;
@@ -3673,10 +3673,10 @@ h6 {
 
 .tokyo_tm_portfolio .portfolio_list li .inner .main_image {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3813,7 +3813,7 @@ h6 {
 }
 
 .tokyo_tm_modalbox .main_details .textbox p:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox {
@@ -3822,18 +3822,18 @@ h6 {
 }
 
 .tokyo_tm_modalbox .main_details .detailbox > ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox > ul > li {
-    margin: 0px 0px 8px 0px;
+    margin: 0 0 8px 0;
     width: 100%;
     float: left;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox > ul > li:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .first {
@@ -3860,19 +3860,19 @@ h6 {
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .share {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
     position: relative;
     top: 7px;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .share li {
-    margin: 0px 5px 0px 0px;
+    margin: 0 5px 0 0;
     display: inline-block;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .share li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox .share li a {
@@ -3889,12 +3889,12 @@ h6 {
 }
 
 .tokyo_tm_modalbox .additional_images ul {
-    margin: 0px 0px 0px -30px;
+    margin: 0 0 0 -30px;
     list-style-type: none;
 }
 
 .tokyo_tm_modalbox .additional_images ul li {
-    margin: 0px 0px 30px 0px;
+    margin: 0 0 30px 0;
     float: left;
     width: 50%;
     padding-left: 30px;
@@ -3923,10 +3923,10 @@ h6 {
 
 .tokyo_tm_modalbox .additional_images ul li .my_image .main {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -3941,16 +3941,16 @@ h6 {
     height: auto;
     clear: both;
     float: left;
-    padding: 100px 0px 45px 0px;
+    padding: 100px 0 45px 0;
 }
 
 .tokyo_tm_news ul {
-    margin: 0px 0px 0px -50px;
+    margin: 0 0 0 -50px;
     list-style-type: none;
 }
 
 .tokyo_tm_news ul li {
-    margin: 0px 0px 50px 0px;
+    margin: 0 0 50px 0;
     float: left;
     width: 50%;
     padding-left: 50px;
@@ -3962,7 +3962,7 @@ h6 {
     clear: both;
     float: left;
     position: relative;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, .07);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .07);
 }
 
 .tokyo_tm_news ul li .image {
@@ -3977,10 +3977,10 @@ h6 {
 
 .tokyo_tm_news ul li .image .main {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -4008,7 +4008,7 @@ h6 {
 }
 
 .tokyo_tm_news ul li .list_inner:hover .details {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .12);
 }
 
 .tokyo_tm_news ul li .details .title {
@@ -4062,7 +4062,7 @@ h6 {
     position: relative;
     content: "/";
     font-size: 10px;
-    padding: 0px 7px 0px 2px;
+    padding: 0 7px 0 2px;
 }
 
 .tokyo_tm_news ul li .extra {
@@ -4111,9 +4111,9 @@ h6 {
     margin: auto;
     width: 100%;
     height: 1px;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
+    top: 0;
+    left: 0;
+    bottom: 0;
     transform: scaleX(.2);
     transform-origin: left center;
     animation: read-more-anim;
@@ -4207,18 +4207,18 @@ h6 {
 
 .tokyo_tm_full_link {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 4;
 }
 
 .tokyo_tm_modalbox {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 100vh;
     z-index: 15;
     background-color: rgba(0, 0, 0, .8);
@@ -4263,13 +4263,13 @@ h6 {
 .tokyo_tm_modalbox.opened .box_inner {
     opacity: 1;
     visibility: visible;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .tokyo_tm_modalbox .close {
     position: fixed;
     left: 100%;
-    top: 0px;
+    top: 0;
     margin-left: 30px;
     z-index: 10;
 }
@@ -4329,10 +4329,10 @@ h6 {
 
 .tokyo_tm_modalbox .description_wrap .image .main {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4374,7 +4374,7 @@ h6 {
 .tokyo_tm_modalbox .date span:before {
     position: absolute;
     content: "";
-    margin-top: 0px;
+    margin-top: 0;
     top: 50%;
     transform: translateY(-50%) rotate(15deg);
     right: 100%;
@@ -4417,7 +4417,7 @@ body.modal {
 }
 
 .tokyo_tm_modalbox .main_content .descriptions p:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .tokyo_tm_modalbox .main_content .quotebox {
@@ -4438,7 +4438,7 @@ body.modal {
 
 .tokyo_tm_modalbox .main_content .icon {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 5px;
 }
 
@@ -4475,7 +4475,7 @@ body.modal {
     height: auto;
     clear: both;
     float: left;
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0 100px 0;
 }
 
 .tokyo_tm_contact .map_wrap {
@@ -4505,13 +4505,13 @@ body.modal {
 }
 
 .tokyo_tm_contact .fields ul {
-    margin: 0px;
+    margin: 0;
     list-style-type: none;
 }
 
 .tokyo_tm_contact .fields ul li {
     width: 100%;
-    margin: 0px 0px 30px 0px;
+    margin: 0 0 30px 0;
     float: left;
 }
 
@@ -4732,22 +4732,22 @@ body.modal {
     }
 
     .tokyo_tm_modalbox .main_details .textbox {
-        padding-right: 0px;
+        padding-right: 0;
         width: 100%;
         margin-bottom: 30px;
     }
 
     .tokyo_tm_modalbox .main_details .detailbox {
-        padding-left: 0px;
+        padding-left: 0;
         width: 100%;
     }
 
     .tokyo_tm_modalbox .additional_images ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_modalbox .additional_images ul li {
-        padding-left: 0px;
+        padding-left: 0;
         width: 100%;
     }
 
@@ -4765,13 +4765,13 @@ body.modal {
 
     .tokyo_tm_modalbox_about .my_box .left {
         width: 100%;
-        padding-right: 0px;
+        padding-right: 0;
         margin-bottom: 50px;
     }
 
     .tokyo_tm_modalbox_about .my_box .right {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 }
 
@@ -4790,7 +4790,7 @@ body.modal {
     }
 
     .tokyo_tm_home .details {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .tokyo_tm_about .description_inner {
@@ -4799,13 +4799,13 @@ body.modal {
 
     .tokyo_tm_about .description .left {
         width: 100%;
-        padding: 0px;
+        padding: 0;
         margin-bottom: 50px;
     }
 
     .tokyo_tm_about .description .right {
         width: 100%;
-        padding: 0px;
+        padding: 0;
     }
 
     .tokyo_tm_title .title_flex {
@@ -4818,7 +4818,7 @@ body.modal {
     }
 
     .container {
-        padding: 0px 20px;
+        padding: 0 20px;
     }
 }
 
@@ -4833,21 +4833,21 @@ body.modal {
     }
 
     .tokyo_tm_portfolio .portfolio_list {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_portfolio .portfolio_list li {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_news ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_news ul li {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox .main_content .icon {
@@ -4856,7 +4856,7 @@ body.modal {
     }
 
     .tokyo_tm_modalbox .main_content .quotebox {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox_about .close a {
@@ -4867,7 +4867,7 @@ body.modal {
 
     .tokyo_tm_modalbox_about .close {
         left: auto;
-        right: 0px;
+        right: 0;
         top: -40px;
     }
 
@@ -4879,17 +4879,17 @@ body.modal {
 
     .tokyo_tm_modalbox .close {
         left: auto;
-        right: 0px;
+        right: 0;
         top: -40px;
     }
 
     .tokyo_tm_modalbox_about .counter ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_modalbox_about .counter ul li {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox .box_inner {
@@ -4920,16 +4920,16 @@ body.modal {
     }
 
     .tokyo_tm_portfolio .portfolio_list {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_portfolio .portfolio_list li {
         width: 100%;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_news ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_modalbox .main_content .icon {
@@ -4938,7 +4938,7 @@ body.modal {
     }
 
     .tokyo_tm_modalbox .main_content .quotebox {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox_about .close a {
@@ -4949,7 +4949,7 @@ body.modal {
 
     .tokyo_tm_modalbox_about .close {
         left: auto;
-        right: 0px;
+        right: 0;
         top: -40px;
     }
 
@@ -4961,16 +4961,16 @@ body.modal {
 
     .tokyo_tm_modalbox .close {
         left: auto;
-        right: 0px;
+        right: 0;
         top: -40px;
     }
 
     .tokyo_tm_modalbox_about .counter ul {
-        margin: 0px;
+        margin: 0;
     }
 
     .tokyo_tm_modalbox_about .counter ul li {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     .tokyo_tm_modalbox .box_inner {
