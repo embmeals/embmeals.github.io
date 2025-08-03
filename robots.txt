@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://www.emills.net/sitemap.xml
+Sitemap: https://www.emills.net/sitemap.txt
