@@ -2,8 +2,7 @@
 
 /*
 /*	Copyright (c) 2021-
-/*	
-
+/*
 
 01)	TOKYO TOKYO BASE
 02) TOKYO MOBILE MENU
@@ -16,7 +15,6 @@
 10) TOKYO MAGIC CURSOR
 11) TOKYO MEDIA QUERIES (FOR SMALL DEVIVES)
 
-
 /*---------------------------------------------------*/
 /*	01) TOKYO BASE
 /*---------------------------------------------------*/
@@ -26,7 +24,6 @@ html {
     padding: 0;
     margin: 0;
 }
-
 
 body {
     font-family: "Mulish";
@@ -468,7 +465,7 @@ h6 {
 }
 
 /*---------------------------------------------------*/
-/*	04) TOKYO RIGHTPART 
+/*	04) TOKYO RIGHTPART
 /*---------------------------------------------------*/
 
 .tokyo_tm_all_wrap .rightpart {
@@ -1427,7 +1424,7 @@ h6 {
 }
 
 /*---------------------------------------------------*/
-/*	08) TOKYO NEWS 
+/*	08) TOKYO NEWS
 /*---------------------------------------------------*/
 
 .tokyo_tm_news {
@@ -2467,8 +2464,7 @@ body.modal {
 
 /*
 /*	Copyright (c) 2021-
-/*	
-
+/*
 
 01)	TOKYO TOKYO BASE
 02) TOKYO MOBILE MENU
@@ -2480,7 +2476,6 @@ body.modal {
 09) TOKYO CONTACT
 10) TOKYO MAGIC CURSOR
 11) TOKYO MEDIA QUERIES (FOR SMALL DEVIVES)
-
 
 /*---------------------------------------------------*/
 /*	01) TOKYO BASE
@@ -2926,7 +2921,7 @@ h6 {
 }
 
 /*---------------------------------------------------*/
-/*	04) TOKYO RIGHTPART 
+/*	04) TOKYO RIGHTPART
 /*---------------------------------------------------*/
 
 .tokyo_tm_all_wrap .rightpart {
@@ -3253,7 +3248,6 @@ h6 {
     color: #000;
     letter-spacing: 2px;
 }
-
 
 .tokyo_tm_modalbox_about {
     position: fixed;
@@ -3933,7 +3927,7 @@ h6 {
 }
 
 /*---------------------------------------------------*/
-/*	08) TOKYO NEWS 
+/*	08) TOKYO NEWS
 /*---------------------------------------------------*/
 
 .tokyo_tm_news {
