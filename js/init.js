@@ -43,7 +43,6 @@
     $(documentReady);
 
     function documentReady() {
-        // Assuming 'styles' variable is globally accessible with your CSS string
         if (typeof styles === 'string') {
             injectStyles(styles);
         }
@@ -151,13 +150,11 @@
     // ----------------------------------------
     function attachLearnMoreHandler() {
         learnMoreButton.on('click', function (event) {
-            var clickedButton = this;
             event.preventDefault();
             aboutModal.removeClass(classNames.closed).addClass(classNames.opened);
         });
 
         aboutModal.on('click', '.close a', function (event) {
-            var clickedClose = this;
             event.preventDefault();
             aboutModal.removeClass(classNames.opened).addClass(classNames.closed);
         });
@@ -200,7 +197,9 @@
     // Attach portfolio filter handler
     // ----------------------------------------
     function attachPortfolioFilterHandler() {
-        if (!$.isFunction($.fn.isotope)) return;
+        if (!$.isFunction($.fn.isotope)) 
+            return;
+        
         var filterLinks = $('.tokyo_tm_portfolio .portfolio_filter ul a');
         var itemList = $('.tokyo_tm_portfolio .portfolio_list');
 
@@ -250,7 +249,9 @@
     // ----------------------------------------
     function attachCustomCursorHandler() {
         var cursorElement = $('.mouse-cursor');
-        if (!cursorElement.length) return;
+        
+        if (!cursorElement.length) 
+            return;
 
         var cursorInner = document.querySelector('.cursor-inner');
         var cursorOuter = document.querySelector('.cursor-outer');
@@ -342,6 +343,7 @@
     function attachLocationClickHandler() {
         $('.href_location').on('click', function (event) {
             var clickedLink = this;
+            
             event.preventDefault();
             var address = $(clickedLink).text().trim().replace(/\s+/g, '+');
             window.open('https://maps.google.com?q=' + address);
