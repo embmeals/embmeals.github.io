@@ -1,3 +1,4 @@
+/* global jQuery, $ */
 (function ($) {
     "use strict";
 
@@ -122,6 +123,18 @@
                 sections.not(targetSection).addClass(classNames.hidden);
             }
         });
+    }
+
+    // ----------------------------------------
+    // Update URL hash without page scroll
+    // ----------------------------------------
+    function hashtag() {
+        var current = $('.transition_link li.active a').attr('href');
+        if (current && history.replaceState) {
+            history.replaceState(null, '', current);
+        } else if (current) {
+            window.location.hash = current;
+        }
     }
 
     // ----------------------------------------
