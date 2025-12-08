@@ -2395,6 +2395,18 @@ body.modal {
         padding-top: 170px;
     }
 
+    .tokyo_tm_art {
+        padding-top: 170px;
+    }
+
+    .tokyo_tm_about,
+    .tokyo_tm_portfolio,
+    .tokyo_tm_contact,
+    .tokyo_tm_news,
+    .tokyo_tm_art {
+        padding-bottom: 120px;
+    }
+
     .tokyo_tm_modalbox .description_wrap {
         padding: 40px;
     }
@@ -4917,6 +4929,18 @@ body.modal {
 
     .tokyo_tm_news {
         padding-top: 170px;
+    }
+
+    .tokyo_tm_art {
+        padding-top: 170px;
+    }
+
+    .tokyo_tm_about,
+    .tokyo_tm_portfolio,
+    .tokyo_tm_contact,
+    .tokyo_tm_news,
+    .tokyo_tm_art {
+        padding-bottom: 120px;
     }
 
     .tokyo_tm_modalbox .description_wrap {
