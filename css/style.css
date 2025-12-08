@@ -146,6 +146,7 @@ h6 {
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .button-group .tokyo_tm_button {
@@ -156,18 +157,28 @@ h6 {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.25rem;
-    background-color: orange;
-    color: #fff;
-    border-radius: 0.5rem;
+    padding: 8px 12px;
+    background: transparent;
+    color: #a9f8ff;
+    border-radius: 8px;
+    border: 1px solid rgba(0,229,255,.55);
     font-weight: 600;
-    text-transform: uppercase;
+    font-size: 14px;
+    text-transform: none;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 0 8px rgba(0,229,255,.25);
+    transition: background-color .2s ease, box-shadow .2s ease, color .2s ease, border-color .2s ease;
 }
 
 .resume-btn:hover {
-    background-color: gray;
+    background: rgba(0,229,255,.14);
+    color: #e6fbff;
+    border-color: rgba(0,229,255,.85);
+    box-shadow: 0 0 12px rgba(0,229,255,.45);
+}
+
+@media (max-width: 640px) {
+    .resume-btn { font-size: 13px; padding: 8px 10px; }
 }
 
 .tokyo_tm_all_wrap,
@@ -1586,6 +1597,143 @@ h6 {
     content: "/";
     font-size: 10px;
     padding: 0 7px 0 2px;
+}
+
+.tokyo_tm_art {
+    width: 100%;
+    float: left;
+    clear: both;
+    padding: 100px 0 50px 0;
+}
+
+.art_folders {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    clear: both;
+    gap: 24px 32px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.folder {
+    background: transparent;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    flex: 0 0 200px;
+}
+
+.folder .icon {
+    --cyber:#00e5ff;
+    --cyber2:#9b5cff;
+    width: 110px;
+    height: 78px;
+    margin: 0 auto 10px;
+    position: relative;
+    border-radius: 4px;
+    background: #0f1528;
+    border: 2px solid var(--cyber);
+    box-shadow:
+        inset 2px 2px 0 rgba(155,92,255,.18),
+        inset -2px -2px 0 rgba(0,229,255,.22),
+        0 0 12px rgba(0,229,255,.35),
+        0 10px 22px rgba(0,0,0,.45);
+    overflow: hidden;
+}
+
+.folder .icon:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    width: 46px;
+    height: 14px;
+    border-radius: 3px 3px 0 0;
+    background: #0d1426;
+    border: 2px solid var(--cyber);
+    border-bottom: none;
+    box-shadow: 0 0 10px rgba(0,229,255,.45);
+}
+
+.folder .icon:after{
+    content:"";
+    position:absolute;inset:0;
+    background:
+        repeating-linear-gradient(0deg, rgba(0,229,255,.08) 0 1px, transparent 2px 4px),
+        linear-gradient(120deg, transparent 0 40%, rgba(255,255,255,.15) 50%, transparent 60%);
+    mix-blend-mode: screen;
+    animation: y2k-scan 8s linear infinite, y2k-shimmer 4s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes y2k-scan {
+    0% { background-position: 0 0, 0 0; }
+    100% { background-position: 0 20px, 0 0; }
+}
+@keyframes y2k-shimmer {
+    0% { transform: translateX(-120%); }
+    100% { transform: translateX(120%); }
+}
+
+.folder .label {
+    font-weight: 700;
+    color: #cfe8ff;
+    margin: 6px 0 8px;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    text-shadow: 0 0 8px rgba(0,229,255,.6);
+}
+
+.folder .open-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 12px;
+    background: linear-gradient(180deg, rgba(0,229,255,.18), rgba(0,229,255,.05));
+    color: #a9f8ff !important;
+    border-radius: 6px;
+    border: 1px solid rgba(0,229,255,.55);
+    box-shadow: 0 0 10px rgba(0,229,255,.35);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.folder .open-btn:hover {
+    background: rgba(0,229,255,.2);
+    box-shadow: 0 0 14px rgba(0,229,255,.6), 0 0 0 2px rgba(0,229,255,.15) inset;
+}
+
+.art_hint {
+    margin-top: 24px;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+.folder .hidden-images { display: none; }
+
+.badge{display:inline-block;background:#334155;color:#e2e8f0;font-size:10px;font-weight:600;padding:2px 6px;border-radius:999px;margin-left:6px}
+.badge-18{background:#b91c1c}
+
+.nsfw_modal{position:fixed;inset:0;background:rgba(2,6,23,.7);display:none;align-items:center;justify-content:center;z-index:9999}
+.nsfw_modal[aria-hidden="false"]{display:flex}
+.nsfw_content{width:min(560px,92vw);background:#0b1220;border:1px solid #27324a;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 0 2px rgba(0,229,255,.12) inset;padding:24px;color:#e2e8f0;text-align:left}
+.nsfw_content h3{margin:0 0 8px;font-size:22px;color:#e6fbff;text-shadow:0 0 10px rgba(0,229,255,.5)}
+.nsfw_content p{margin:6px 0;color:#cbd5e1}
+.nsfw_content .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
+.nsfw_content .btn_cancel,.nsfw_content .btn_confirm{padding:8px 14px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#e2e8f0;cursor:pointer}
+.nsfw_content .btn_confirm{border-color:#06b6d4;background:linear-gradient(180deg, rgba(0,229,255,.18), rgba(0,229,255,.05));color:#a9f8ff;box-shadow:0 0 10px rgba(0,229,255,.35)}
+
+@media (max-width: 1040px) {
+    .art_folders { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+    .art_folders { grid-template-columns: 1fr; }
 }
 
 .tokyo_tm_news ul li .extra {

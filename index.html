@@ -79,6 +79,9 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
+                    <a href="#art">Art</a>
+                </li>
+                <li>
                     <a href="#portfolio">Portfolio</a>
                 </li>
             </ul>
@@ -95,7 +98,10 @@
                         <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#art">Art</a>
                     </li>
                 </ul>
             </div>
@@ -196,6 +202,84 @@
                                 </div>
 
                                 <br/><br/><br/><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Art section -->
+            <div id="art" class="tokyo_tm_section">
+                <div class="container">
+                    <div class="tokyo_tm_art">
+                        <div class="tokyo_tm_title">
+                            <div class="title_flex">
+                                <div class="left">
+                                    <span>Art</span>
+                                    <h3>Collage Folders</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="art_folders">
+                            <!-- Ember folder -->
+                            <div class="folder gallery_zoom" data-creator="ember" data-medium="digital" data-nsfw="false">
+                                <div class="icon" aria-hidden="true"></div>
+                                <h4 class="label">Ember</h4>
+                                <a class="open open-btn" href="img/collages/ember/collage003.png" title="Ember collage 003">Open</a>
+                                <div class="hidden-images" aria-hidden="true">
+                                    <a class="zoom" href="img/collages/ember/collage026.png" title="Ember collage 026"></a>
+                                </div>
+                            </div>
+
+                            <!-- Casey folder -->
+                            <div class="folder gallery_zoom" data-creator="casey" data-medium="digital" data-nsfw="false">
+                                <div class="icon" aria-hidden="true"></div>
+                                <h4 class="label">Casey</h4>
+                                <a class="open open-btn" href="img/collages/casey/collage010.png" title="Casey collage 010">Open</a>
+                                <div class="hidden-images" aria-hidden="true">
+                                    <a class="zoom" href="img/collages/casey/collage011.png" title="Casey collage 011"></a>
+                                    <a class="zoom" href="img/collages/casey/collage012.png" title="Casey collage 012"></a>
+                                    <a class="zoom" href="img/collages/casey/collage018.png" title="Casey collage 018"></a>
+                                    <a class="zoom" href="img/collages/casey/collage021.png" title="Casey collage 021"></a>
+                                    <a class="zoom" href="img/collages/casey/collage022.png" title="Casey collage 022"></a>
+                                    <a class="zoom" href="img/collages/casey/collage027.png" title="Casey collage 027"></a>
+                                    <a class="zoom" href="img/collages/casey/collage030.png" title="Casey collage 030"></a>
+                                    <a class="zoom" href="img/collages/casey/xmas_photo_trimmed_4.png" title="Casey Christmas Photo"></a>
+                                </div>
+                            </div>
+
+                            <!-- X-Rated folder (18+) -->
+                            <div class="folder gallery_zoom" data-creator="casey" data-medium="digital" data-nsfw="true">
+                                <div class="icon" aria-hidden="true"></div>
+                                <h4 class="label">X-Rated <span class="badge badge-18">18+</span></h4>
+                                <!-- Remove 'zoom' so popup doesn't bypass disclaimer -->
+                                <a class="open open-btn" data-nsfw-open="true" href="img/collages/casey/x-rated/collage001.png" title="X-Rated 001" aria-controls="nsfw_disclaimer">Open</a>
+                                <div class="hidden-images" aria-hidden="true">
+                                    <a class="zoom" href="img/collages/casey/x-rated/collage002.png" title="X-Rated 002"></a>
+                                    <a class="zoom" href="img/collages/casey/x-rated/collage020.png" title="X-Rated 020"></a>
+                                    <a class="zoom" href="img/collages/casey/x-rated/collage020.png" title="X-Rated 020"></a>
+                                    <a class="zoom" href="img/collages/casey/x-rated/collage023.png" title="X-Rated 023"></a>
+                                    <a class="zoom" href="img/collages/casey/x-rated/collage024.png" title="X-Rated 024"></a>
+                                    <a class="zoom" href="img/collages/casey/x-rated/collage025.png" title="X-Rated 025"></a>
+                                    <a class="zoom" href="img/collages/casey/x-rated/collage028.png" title="X-Rated 028"></a>
+                                    <a class="zoom" href="img/collages/casey/x-rated/collage029.png" title="X-Rated 029"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NSFW disclaimer modal -->
+                        <div id="nsfw_disclaimer" class="nsfw_modal" aria-hidden="true" role="dialog" aria-modal="true">
+                            <div class="nsfw_content">
+                                <h3>Adult Content Ahead</h3>
+                                <p>
+                                    This section contains artistic nudity and mature themes. It is presented as
+                                    freedom of expression and may not be suitable for all audiences.
+                                </p>
+                                <p>By continuing you confirm you are 18+ and wish to proceed.</p>
+                                <div class="actions">
+                                    <button type="button" class="btn_cancel" data-nsfw-cancel>Go Back</button>
+                                    <button type="button" class="btn_confirm" data-nsfw-accept>Enter</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -506,5 +590,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/init.js"></script>
+</div>
 </body>
 </html>

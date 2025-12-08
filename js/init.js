@@ -60,6 +60,7 @@
         initializePopupHandler();
         applyBackgroundImages();
         attachLocationClickHandler();
+        attachNsfwDisclaimer();
     }
 
     // ----------------------------------------
@@ -218,6 +219,55 @@
         });
     }
 
+    function attachNsfwDisclaimer(){
+        var $nsfwFolder = $("#art .folder[data-nsfw='true']");
+        var $modal = $("#nsfw_disclaimer");
+        
+        if(!$nsfwFolder.length || !$modal.length) 
+            return;
+
+        var pendingHref = null;
+
+        $(document).on('click', "#art .folder[data-nsfw='true'] .open-btn", function(e){
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            pendingHref = $(this).attr('href');
+            $modal.attr('aria-hidden','false');
+        });
+
+        $(document).on('click','[data-nsfw-cancel]', function(){
+            $modal.attr('aria-hidden','true');
+            pendingHref = null;
+        });
+
+        $(document).on('click','[data-nsfw-accept]', function(){
+            $modal.attr('aria-hidden','true');
+            if(pendingHref){
+                openFolderGallery($nsfwFolder);
+                pendingHref = null;
+            }
+        });
+
+        function getFolderItems($folder){
+            var items = [];
+            var lead = $folder.find('.open-btn').attr('href');
+            
+            if(lead){ items.push({ src: lead }); }
+            $folder.find('a.zoom').each(function(){
+                items.push({ src: $(this).attr('href') });
+            });
+            return items;
+        }
+
+        function openFolderGallery($folder){
+            $.magnificPopup.open({
+                items: getFolderItems($folder),
+                type: 'image',
+                gallery: { enabled: true }
+            });
+        }
+    }
+
     // ----------------------------------------
     // Handle window load
     // ----------------------------------------
@@ -303,14 +353,7 @@
     // Initialize popup handler
     // ----------------------------------------
     function initializePopupHandler() {
-        $('.gallery_zoom').magnificPopup({
-            delegate: 'a.zoom',
-            type: 'image',
-            gallery: {enabled: true},
-            removalDelay: 300,
-            mainClass: 'mfp-fade'
-        });
-
+       
         $('.popup-youtube, .popup-vimeo').magnificPopup({
             disableOn: 700,
             type: 'iframe',
@@ -325,6 +368,20 @@
             gallery: {enabled: true}
         });
     }
+
+    $(document).on('click', '#art .folder .open-btn', function(e){
+        var $btn = $(this);
+        if($btn.closest('[data-nsfw="true"]').length){ return; }
+        e.preventDefault();
+        var $folder = $btn.closest('.folder');
+        var items = [];
+        
+        var lead = $btn.attr('href');
+        
+        if(lead){ items.push({ src: lead }); }
+        $folder.find('a.zoom').each(function(){ items.push({ src: $(this).attr('href') }); });
+        $.magnificPopup.open({ items: items, type: 'image', gallery: { enabled: true }, removalDelay: 300, mainClass: 'mfp-fade' });
+    });
 
     // ----------------------------------------
     // Apply background images
