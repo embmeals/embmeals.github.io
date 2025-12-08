@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "es6": true
+  },
+  "globals": {
+    "jQuery": "readonly",
+    "$": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-undef": "error",
+    "semi": ["warn", "always"],
+    "quotes": "off",
+    "indent": "off",
+    "no-console": "off",
+    "no-empty": "warn"
+  }
+}
