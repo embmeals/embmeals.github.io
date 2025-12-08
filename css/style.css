@@ -156,30 +156,35 @@ h6 {
 .resume-btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 8px 12px;
+    gap: 0.4rem;
+    padding: 6px 10px;
     background: transparent;
-    color: #a9f8ff;
-    border-radius: 8px;
-    border: 1px solid rgba(0,229,255,.55);
+    color: #cbd5e1;
+    border-radius: 6px;
+    border: 1px solid #334155;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: none;
     text-decoration: none;
-    box-shadow: 0 0 8px rgba(0,229,255,.25);
-    transition: background-color .2s ease, box-shadow .2s ease, color .2s ease, border-color .2s ease;
+    box-shadow: none;
+    opacity: .9;
+    transition: background-color .2s ease, box-shadow .2s ease, color .2s ease, border-color .2s ease, opacity .2s ease;
 }
 
 .resume-btn:hover {
-    background: rgba(0,229,255,.14);
-    color: #e6fbff;
-    border-color: rgba(0,229,255,.85);
-    box-shadow: 0 0 12px rgba(0,229,255,.45);
+    background: rgba(148,163,184,.08);
+    color: #e2e8f0;
+    border-color: #475569;
+    box-shadow: none;
+    opacity: 1;
 }
 
 @media (max-width: 640px) {
-    .resume-btn { font-size: 13px; padding: 8px 10px; }
+    .resume-btn { font-size: 12px; padding: 6px 8px; }
 }
+
+/* icon sizing for subtle look */
+.resume-btn i { font-size: .9em; opacity: .85; }
 
 .tokyo_tm_all_wrap,
 .tokyo_tm_all_wrap * {
