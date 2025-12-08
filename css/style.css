@@ -1724,6 +1724,31 @@ h6 {
 .badge{display:inline-block;background:#334155;color:#e2e8f0;font-size:10px;font-weight:600;padding:2px 6px;border-radius:999px;margin-left:6px}
 .badge-18{background:#b91c1c}
 
+/* NSFW folder blur overlay */
+.folder[data-nsfw="true"] .icon {
+    position: relative;
+}
+.folder[data-nsfw="true"] .icon::after {
+    content: "🔞";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11,18,32,.75);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: #fff;
+    font-size: 28px;
+    border-radius: 4px;
+    transition: opacity .25s ease, backdrop-filter .25s ease;
+}
+.folder[data-nsfw="true"]:hover .icon::after {
+    opacity: 0.4;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
 .nsfw_modal{position:fixed;inset:0;background:rgba(2,6,23,.7);display:none;align-items:center;justify-content:center;z-index:9999}
 .nsfw_modal[aria-hidden="false"]{display:flex}
 .nsfw_content{width:min(560px,92vw);background:#0b1220;border:1px solid #27324a;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 0 2px rgba(0,229,255,.12) inset;padding:24px;color:#e2e8f0;text-align:left}

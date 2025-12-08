@@ -235,16 +235,36 @@
     function attachNsfwDisclaimer(){
         var $nsfwFolder = $("#art .folder[data-nsfw='true']");
         var $modal = $("#nsfw_disclaimer");
-        
-        if(!$nsfwFolder.length || !$modal.length) 
+        var STORAGE_KEY = 'nsfw_accepted';
+
+        if(!$nsfwFolder.length || !$modal.length)
             return;
 
         var pendingHref = null;
+
+        // Check if user already accepted this session
+        function hasAccepted() {
+            try { return sessionStorage.getItem(STORAGE_KEY) === 'true'; }
+            catch(e) { return false; }
+        }
+
+        function setAccepted() {
+            try { sessionStorage.setItem(STORAGE_KEY, 'true'); }
+            catch(e) { /* storage unavailable */ }
+        }
 
         $(document).on('click', "#art .folder[data-nsfw='true'] .open-btn", function(e){
             e.preventDefault();
             e.stopImmediatePropagation();
             pendingHref = $(this).attr('href');
+
+            // Skip modal if already accepted this session
+            if(hasAccepted()) {
+                openFolderGallery($nsfwFolder);
+                pendingHref = null;
+                return;
+            }
+
             $modal.attr('aria-hidden','false');
         });
 
@@ -255,6 +275,7 @@
 
         $(document).on('click','[data-nsfw-accept]', function(){
             $modal.attr('aria-hidden','true');
+            setAccepted();
             if(pendingHref){
                 openFolderGallery($nsfwFolder);
                 pendingHref = null;
