@@ -1,9 +1,3 @@
-# This workflow executes several linters on changed files based on languages used in your code base whenever
-# you push a code or open a pull request.
-#
-# You can adjust the behavior by modifying this file.
-# For more information, see:
-# https://github.com/github/super-linter
 name: Lint Code Base
 
 on:
@@ -39,52 +33,3 @@ jobs:
           VALIDATE_HTML: true
           VALIDATE_CSS: true
           VALIDATE_JAVASCRIPT_ES: true
-          # Disable all other linters for speed
-          VALIDATE_BASH: false
-          VALIDATE_CLOUDFORMATION: false
-          VALIDATE_CLOJURE: false
-          VALIDATE_COFFEE: false
-          VALIDATE_CPP: false
-          VALIDATE_CSHARP: false
-          VALIDATE_DART: false
-          VALIDATE_DOCKERFILE_HADOLINT: false
-          VALIDATE_EDITORCONFIG: false
-          VALIDATE_ENV: false
-          VALIDATE_GHERKIN: false
-          VALIDATE_GO: false
-          VALIDATE_GROOVY: false
-          VALIDATE_JAVA: false
-          VALIDATE_JSCPD: false
-          VALIDATE_JSON: false
-          VALIDATE_KOTLIN: false
-          VALIDATE_LATEX: false
-          VALIDATE_LUA: false
-          VALIDATE_MARKDOWN: false
-          VALIDATE_OPENAPI: false
-          VALIDATE_PERL: false
-          VALIDATE_PHP_BUILTIN: false
-          VALIDATE_PHP_PHPCS: false
-          VALIDATE_PHP_PHPSTAN: false
-          VALIDATE_PHP_PSALM: false
-          VALIDATE_POWERSHELL: false
-          VALIDATE_PROTOBUF: false
-          VALIDATE_PYTHON_BLACK: false
-          VALIDATE_PYTHON_FLAKE8: false
-          VALIDATE_PYTHON_ISORT: false
-          VALIDATE_PYTHON_PYLINT: false
-          VALIDATE_R: false
-          VALIDATE_RAKU: false
-          VALIDATE_RUBY: false
-          VALIDATE_RUST_2015: false
-          VALIDATE_RUST_2018: false
-          VALIDATE_RUST_2021: false
-          VALIDATE_SCALAFMT: false
-          VALIDATE_SHELL_SHFMT: false
-          VALIDATE_SNAKEMAKE: false
-          VALIDATE_STATES: false
-          VALIDATE_TERRAFORM_TFLINT: false
-          VALIDATE_TERRAFORM_TERRASCAN: false
-          VALIDATE_TSX: false
-          VALIDATE_TYPESCRIPT_ES: false
-          VALIDATE_XML: false
-          VALIDATE_YAML: false
