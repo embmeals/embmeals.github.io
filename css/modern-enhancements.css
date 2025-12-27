@@ -311,7 +311,7 @@ body {
 }
 
 /* Modern Typography */
-.name {
+.tokyo_tm_home .name {
     font-family: var(--font-family-secondary);
     font-size: 2.5rem;
     font-weight: 700;
@@ -320,7 +320,7 @@ body {
     line-height: 1.2;
 }
 
-.name span {
+.tokyo_tm_home .name span {
     color: var(--primary-color);
 }
 
@@ -622,7 +622,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .name {
+    .tokyo_tm_home .name {
         font-size: 3rem;
     }
 
@@ -713,7 +713,7 @@ body {
         padding: 2rem 0;
     }
 
-    .name {
+    .tokyo_tm_home .name {
         font-size: 2rem;
     }
 
