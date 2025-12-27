@@ -101,7 +101,6 @@ blockquote {
 
 blockquote:before,
 blockquote:after {
-    content: "";
     content: none;
 }
 ul,
@@ -7457,14 +7456,9 @@ input[type="button"] {
 }
 .mfp-zoom-out-cur,
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-    cursor: -moz-zoom-out;
-    cursor: -webkit-zoom-out;
     cursor: zoom-out;
 }
 .mfp-zoom {
-    cursor: pointer;
-    cursor: -webkit-zoom-in;
-    cursor: -moz-zoom-in;
     cursor: zoom-in;
 }
 .mfp-auto-cursor .mfp-content {
@@ -13346,7 +13340,6 @@ body {
 .owl-carousel .owl-dot,
 .owl-carousel .owl-nav .owl-next,
 .owl-carousel .owl-nav .owl-prev {
-    cursor: pointer;
     cursor: hand;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -13371,7 +13364,6 @@ body {
     user-select: none;
 }
 .owl-carousel.owl-grab {
-    cursor: move;
     cursor: grab;
 }
 .owl-carousel.owl-rtl {
