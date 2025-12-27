@@ -1,6 +1,6 @@
-﻿# robots.txt for embmeals.github.io
+# robots.txt for embmeals.github.io
 
 User-agent: *
 Allow: /
 
-Disallow: /img/collages/casey/x-rated/
+Sitemap: https://www.emills.net/sitemap.xml
