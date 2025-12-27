@@ -1,24 +1,5 @@
 @charset "utf-8";
 
-/*
-/*	Copyright (c) 2021-
-/*
-
-01)	TOKYO TOKYO BASE
-02) TOKYO MOBILE MENU
-03) TOKYO LEFTPART
-04) TOKYO RIGHTPART
-05) TOKYO HOME
-06) TOKYO ABOUT
-08) TOKYO NEWS
-09) TOKYO CONTACT
-10) TOKYO MAGIC CURSOR
-11) TOKYO MEDIA QUERIES (FOR SMALL DEVIVES)
-
-/*---------------------------------------------------*/
-/*	01) TOKYO BASE
-/*---------------------------------------------------*/
-
 html {
     overflow: hidden;
     padding: 0;
@@ -42,12 +23,12 @@ body {
 }
 
 .portfolioGif {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     margin-bottom: 5px;
 }
 
 .portfolio-caption {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
 }
 
 svg {
@@ -66,29 +47,35 @@ img.svg {
     height: 30px;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
     color: #6f6f6f;
 }
 
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #6f6f6f;
-    opacity: 1;
-}
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
     color: #6f6f6f;
     opacity: 1;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #6f6f6f;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: #6f6f6f;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: #6f6f6f;
 }
 
-::placeholder { /* Most modern browsers support this now. */
+::placeholder {
+    /* Most modern browsers support this now. */
     color: #6f6f6f;
 }
 
@@ -103,7 +90,12 @@ img.svg {
     clear: both;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 500;
     line-height: 1.4;
     font-family: "Montserrat";
@@ -142,6 +134,18 @@ h6 {
     position: relative;
 }
 
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
 .button-group {
     display: flex;
     gap: 1rem;
@@ -167,12 +171,17 @@ h6 {
     text-transform: none;
     text-decoration: none;
     box-shadow: none;
-    opacity: .9;
-    transition: background-color .2s ease, box-shadow .2s ease, color .2s ease, border-color .2s ease, opacity .2s ease;
+    opacity: 0.9;
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        opacity 0.2s ease;
 }
 
 .resume-btn:hover {
-    background: rgba(148,163,184,.08);
+    background: rgba(148, 163, 184, 0.08);
     color: #e2e8f0;
     border-color: #475569;
     box-shadow: none;
@@ -180,11 +189,17 @@ h6 {
 }
 
 @media (max-width: 640px) {
-    .resume-btn { font-size: 12px; padding: 6px 8px; }
+    .resume-btn {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
 }
 
 /* icon sizing for subtle look */
-.resume-btn i { font-size: .9em; opacity: .85; }
+.resume-btn i {
+    font-size: 0.9em;
+    opacity: 0.85;
+}
 
 .tokyo_tm_all_wrap,
 .tokyo_tm_all_wrap * {
@@ -205,7 +220,7 @@ h6 {
 
 #preloader:before,
 #preloader:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -235,7 +250,7 @@ h6 {
 }
 
 .loader_line:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 50%;
@@ -252,7 +267,7 @@ h6 {
 }
 
 .loader_line:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -380,11 +395,11 @@ h6 {
     width: 200px;
     z-index: 15;
     background-color: #fff;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_mobile_menu.opened {
@@ -462,11 +477,11 @@ h6 {
     display: inline-block;
     font-weight: 500;
     font-family: "Montserrat";
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_all_wrap .leftpart .menu ul li a:hover {
@@ -496,11 +511,11 @@ h6 {
     text-decoration: none;
     color: #787878;
     font-weight: 500;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_all_wrap .leftpart .copyright a:hover {
@@ -541,10 +556,18 @@ h6 {
     opacity: 0;
     visibility: hidden;
     z-index: 8;
-    transition: visibility 1s linear, opacity 0s linear;
-    -moz-transition: visibility 1s linear, opacity 0s linear;
-    -webkit-transition: visibility1s linear, opacity 0s linear;
-    -o-transition: visibility 1s linear, opacity 0s linear;
+    transition:
+        visibility 1s linear,
+        opacity 0s linear;
+    -moz-transition:
+        visibility 1s linear,
+        opacity 0s linear;
+    -webkit-transition:
+        visibility1s linear,
+        opacity 0s linear;
+    -o-transition:
+        visibility 1s linear,
+        opacity 0s linear;
     background-color: #0a192f;
 }
 
@@ -608,9 +631,9 @@ h6 {
     background-size: cover;
     animation: morph 8s ease-in-out infinite 1s;
     background-blend-mode: multiply;
-    -webkit-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
-    -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
-    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
+    -webkit-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
 }
 
 @keyframes morph {
@@ -671,11 +694,11 @@ h6 {
     text-decoration: none;
     color: #000;
     font-size: 20px;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_home .social ul li a:hover {
@@ -717,7 +740,7 @@ h6 {
 
 .tokyo_tm_about .about_image img {
     min-width: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
 }
 
 .tokyo_tm_about .description {
@@ -776,11 +799,11 @@ h6 {
 .tokyo_tm_about .description .right > ul > li a {
     text-decoration: none;
     color: #787878;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_about .description .right > ul > li a:hover {
@@ -795,14 +818,14 @@ h6 {
     right: 0;
     height: 100vh;
     z-index: 15;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox_about.opened {
@@ -826,12 +849,12 @@ h6 {
     opacity: 0;
     visibility: hidden;
     margin-top: -20px;
-    transition-delay: .3s;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    transition-delay: 0.3s;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox_about.opened .box_inner {
@@ -859,11 +882,11 @@ h6 {
     color: #fff;
     border-radius: 10px;
     position: relative;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     fill: rgb(204, 214, 246);
 }
 
@@ -959,7 +982,7 @@ h6 {
 }
 
 .progress_inner .background {
-    background: rgba(0, 0, 0, .09);
+    background: rgba(0, 0, 0, 0.09);
     width: 100%;
     min-width: 100%;
     position: relative;
@@ -979,9 +1002,9 @@ h6 {
 }
 
 .progress_inner .background .bar.open {
-    -webkit-animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000); /* Safari 4+ */
-    -moz-animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000); /* Fx 5+ */
-    animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000); /* IE 10+ */
+    -webkit-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* Safari 4+ */
+    -moz-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* Fx 5+ */
+    animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* IE 10+ */
     width: 100%;
 }
 
@@ -1047,7 +1070,7 @@ h6 {
     clear: both;
     float: left;
     position: relative;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 40px 20px;
 }
@@ -1077,12 +1100,12 @@ h6 {
 
 .tokyo_tm_modalbox_about .partners ul li {
     margin: 0;
-    opacity: .5;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox_about .partners ul li:hover {
@@ -1108,7 +1131,7 @@ h6 {
 
 .tokyo_tm_title span {
     display: inline-block;
-    background-color: rgba(0, 0, 0, .04);
+    background-color: rgba(0, 0, 0, 0.04);
     text-transform: uppercase;
     padding: 4px 10px;
     font-weight: 600;
@@ -1148,11 +1171,11 @@ h6 {
     display: inline-block;
     font-weight: 500;
     font-family: "Montserrat";
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_portfolio .portfolio_filter ul li a.current {
@@ -1215,11 +1238,11 @@ h6 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_portfolio .portfolio_list li .inner:hover .main_image {
@@ -1382,11 +1405,11 @@ h6 {
 .tokyo_tm_modalbox .main_details .detailbox span a {
     text-decoration: none;
     color: #767676;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox span a:hover {
@@ -1497,7 +1520,7 @@ h6 {
     clear: both;
     float: left;
     position: relative;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .07);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
 }
 
 .tokyo_tm_news ul li .image {
@@ -1519,11 +1542,11 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_news ul li .list_inner .image:hover .main {
@@ -1535,15 +1558,15 @@ h6 {
     float: left;
     padding: 1px 20px 5px 20px !important;
     background-color: #fff;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_news ul li .list_inner:hover .details {
-    box-shadow: 0 0 20px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
 }
 
 .tokyo_tm_news ul li .details .title {
@@ -1561,11 +1584,11 @@ h6 {
     font-size: 18px;
     font-weight: 600;
     display: inline-block;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_news ul li .details .title a:hover {
@@ -1582,11 +1605,11 @@ h6 {
 .tokyo_tm_news ul li .details .date a {
     text-decoration: none;
     color: #767676;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_news ul li .details .date a:hover {
@@ -1632,8 +1655,8 @@ h6 {
 }
 
 .folder .icon {
-    --cyber:#00e5ff;
-    --cyber2:#9b5cff;
+    --cyber: #00e5ff;
+    --cyber2: #9b5cff;
     width: 110px;
     height: 78px;
     margin: 0 auto 10px;
@@ -1642,10 +1665,10 @@ h6 {
     background: #0f1528;
     border: 2px solid var(--cyber);
     box-shadow:
-        inset 2px 2px 0 rgba(155,92,255,.18),
-        inset -2px -2px 0 rgba(0,229,255,.22),
-        0 0 12px rgba(0,229,255,.35),
-        0 10px 22px rgba(0,0,0,.45);
+        inset 2px 2px 0 rgba(155, 92, 255, 0.18),
+        inset -2px -2px 0 rgba(0, 229, 255, 0.22),
+        0 0 12px rgba(0, 229, 255, 0.35),
+        0 10px 22px rgba(0, 0, 0, 0.45);
     overflow: hidden;
 }
 
@@ -1660,27 +1683,42 @@ h6 {
     background: #0d1426;
     border: 2px solid var(--cyber);
     border-bottom: none;
-    box-shadow: 0 0 10px rgba(0,229,255,.45);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.45);
 }
 
-.folder .icon:after{
-    content:"";
-    position:absolute;inset:0;
+.folder .icon:after {
+    content: "";
+    position: absolute;
+    inset: 0;
     background:
-        repeating-linear-gradient(0deg, rgba(0,229,255,.08) 0 1px, transparent 2px 4px),
-        linear-gradient(120deg, transparent 0 40%, rgba(255,255,255,.15) 50%, transparent 60%);
+        repeating-linear-gradient(0deg, rgba(0, 229, 255, 0.08) 0 1px, transparent 2px 4px),
+        linear-gradient(120deg, transparent 0 40%, rgba(255, 255, 255, 0.15) 50%, transparent 60%);
     mix-blend-mode: screen;
-    animation: y2k-scan 8s linear infinite, y2k-shimmer 4s linear infinite;
-    pointer-events:none;
+    animation:
+        y2k-scan 8s linear infinite,
+        y2k-shimmer 4s linear infinite;
+    pointer-events: none;
 }
 
 @keyframes y2k-scan {
-    0% { background-position: 0 0, 0 0; }
-    100% { background-position: 0 20px, 0 0; }
+    0% {
+        background-position:
+            0 0,
+            0 0;
+    }
+    100% {
+        background-position:
+            0 20px,
+            0 0;
+    }
 }
 @keyframes y2k-shimmer {
-    0% { transform: translateX(-120%); }
-    100% { transform: translateX(120%); }
+    0% {
+        transform: translateX(-120%);
+    }
+    100% {
+        transform: translateX(120%);
+    }
 }
 
 .folder .label {
@@ -1691,26 +1729,28 @@ h6 {
     display: block;
     width: 100%;
     text-transform: uppercase;
-    letter-spacing: .08em;
-    text-shadow: 0 0 8px rgba(0,229,255,.6);
+    letter-spacing: 0.08em;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
 }
 
 .folder .open-btn {
     display: inline-block;
     padding: 6px 12px;
     font-size: 12px;
-    background: linear-gradient(180deg, rgba(0,229,255,.18), rgba(0,229,255,.05));
+    background: linear-gradient(180deg, rgba(0, 229, 255, 0.18), rgba(0, 229, 255, 0.05));
     color: #a9f8ff !important;
     border-radius: 6px;
-    border: 1px solid rgba(0,229,255,.55);
-    box-shadow: 0 0 10px rgba(0,229,255,.35);
+    border: 1px solid rgba(0, 229, 255, 0.55);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.35);
     text-decoration: none;
     white-space: nowrap;
 }
 
 .folder .open-btn:hover {
-    background: rgba(0,229,255,.2);
-    box-shadow: 0 0 14px rgba(0,229,255,.6), 0 0 0 2px rgba(0,229,255,.15) inset;
+    background: rgba(0, 229, 255, 0.2);
+    box-shadow:
+        0 0 14px rgba(0, 229, 255, 0.6),
+        0 0 0 2px rgba(0, 229, 255, 0.15) inset;
 }
 
 .art_hint {
@@ -1719,10 +1759,23 @@ h6 {
     font-style: italic;
 }
 
-.folder .hidden-images { display: none; }
+.folder .hidden-images {
+    display: none;
+}
 
-.badge{display:inline-block;background:#334155;color:#e2e8f0;font-size:10px;font-weight:600;padding:2px 6px;border-radius:999px;margin-left:6px}
-.badge-18{background:#b91c1c}
+.badge {
+    display: inline-block;
+    background: #334155;
+    color: #e2e8f0;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 999px;
+    margin-left: 6px;
+}
+.badge-18 {
+    background: #b91c1c;
+}
 
 /* NSFW folder blur overlay */
 .folder[data-nsfw="true"] .icon {
@@ -1735,13 +1788,15 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(11,18,32,.75);
+    background: rgba(11, 18, 32, 0.75);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     color: #fff;
     font-size: 28px;
     border-radius: 4px;
-    transition: opacity .25s ease, backdrop-filter .25s ease;
+    transition:
+        opacity 0.25s ease,
+        backdrop-filter 0.25s ease;
 }
 .folder[data-nsfw="true"]:hover .icon::after {
     opacity: 0.4;
@@ -1749,21 +1804,72 @@ h6 {
     -webkit-backdrop-filter: blur(1px);
 }
 
-.nsfw_modal{position:fixed;inset:0;background:rgba(2,6,23,.7);display:none;align-items:center;justify-content:center;z-index:9999}
-.nsfw_modal[aria-hidden="false"]{display:flex}
-.nsfw_content{width:min(560px,92vw);background:#0b1220;border:1px solid #27324a;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 0 2px rgba(0,229,255,.12) inset;padding:24px;color:#e2e8f0;text-align:left}
-.nsfw_content h3{margin:0 0 8px;font-size:22px;color:#e6fbff;text-shadow:0 0 10px rgba(0,229,255,.5)}
-.nsfw_content p{margin:6px 0;color:#cbd5e1}
-.nsfw_content .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
-.nsfw_content .btn_cancel,.nsfw_content .btn_confirm{padding:8px 14px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#e2e8f0;cursor:pointer}
-.nsfw_content .btn_confirm{border-color:#06b6d4;background:linear-gradient(180deg, rgba(0,229,255,.18), rgba(0,229,255,.05));color:#a9f8ff;box-shadow:0 0 10px rgba(0,229,255,.35)}
+.nsfw_modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.nsfw_modal[aria-hidden="false"] {
+    display: flex;
+}
+.nsfw_content {
+    width: min(560px, 92vw);
+    background: #0b1220;
+    border: 1px solid #27324a;
+    border-radius: 12px;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.6),
+        0 0 0 2px rgba(0, 229, 255, 0.12) inset;
+    padding: 24px;
+    color: #e2e8f0;
+    text-align: left;
+}
+.nsfw_content h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: #e6fbff;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+.nsfw_content p {
+    margin: 6px 0;
+    color: #cbd5e1;
+}
+.nsfw_content .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+.nsfw_content .btn_cancel,
+.nsfw_content .btn_confirm {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: #e2e8f0;
+    cursor: pointer;
+}
+.nsfw_content .btn_confirm {
+    border-color: #06b6d4;
+    background: linear-gradient(180deg, rgba(0, 229, 255, 0.18), rgba(0, 229, 255, 0.05));
+    color: #a9f8ff;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.35);
+}
 
 @media (max-width: 1040px) {
-    .art_folders { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .art_folders {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 640px) {
-    .art_folders { grid-template-columns: 1fr; }
+    .art_folders {
+        grid-template-columns: 1fr;
+    }
 }
 
 .tokyo_tm_news ul li .extra {
@@ -1779,7 +1885,7 @@ h6 {
     content: "";
     width: 100%;
     height: 1px;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, 0.1);
     bottom: -7px;
 }
 
@@ -1807,7 +1913,7 @@ h6 {
 
 .tokyo_tm_read_more a:before {
     position: absolute;
-    content: '';
+    content: "";
     background-color: #000;
     margin: auto;
     width: 100%;
@@ -1815,12 +1921,12 @@ h6 {
     top: 0;
     left: 0;
     bottom: 0;
-    transform: scaleX(.2);
+    transform: scaleX(0.2);
     transform-origin: left center;
     animation: read-more-anim;
     animation-fill-mode: forwards;
-    animation-duration: .4s;
-    animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.6, 0.01, 0, 1);
 }
 
 .tokyo_tm_read_more a span {
@@ -1828,15 +1934,15 @@ h6 {
     position: relative;
     background-color: #fff;
     z-index: 1;
-    transition: .6s cubic-bezier(.6, .01, 0, 1);
+    transition: 0.6s cubic-bezier(0.6, 0.01, 0, 1);
     transform: translateX(-110%);
 }
 
 .tokyo_tm_news ul li .list_inner:hover .tokyo_tm_read_more a:before {
     animation: read-more-anim-2;
     animation-fill-mode: forwards;
-    animation-duration: .4s;
-    animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.6, 0.01, 0, 1);
 }
 
 .tokyo_tm_news ul li .list_inner:focus .tokyo_tm_read_more a span {
@@ -1850,7 +1956,7 @@ h6 {
 @keyframes read-more-anim {
     0% {
         transform-origin: right center;
-        transform: scaleX(.2);
+        transform: scaleX(0.2);
     }
 
     70% {
@@ -1864,14 +1970,14 @@ h6 {
 
     100% {
         transform-origin: left center;
-        transform: scaleX(.2);
+        transform: scaleX(0.2);
     }
 }
 
 @keyframes read-more-anim-2 {
     0% {
         transform-origin: left center;
-        transform: scaleX(.2);
+        transform: scaleX(0.2);
     }
 
     70% {
@@ -1885,7 +1991,7 @@ h6 {
 
     100% {
         transform-origin: right center;
-        transform: scaleX(.2);
+        transform: scaleX(0.2);
     }
 }
 
@@ -1902,7 +2008,7 @@ h6 {
     content: "";
     width: 100%;
     height: 1px;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, 0.1);
     bottom: -10px;
 }
 
@@ -1926,14 +2032,14 @@ h6 {
     right: 0;
     height: 100vh;
     z-index: 15;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox.opened {
@@ -1957,12 +2063,12 @@ h6 {
     opacity: 0;
     visibility: hidden;
     margin-top: -20px;
-    transition-delay: .3s;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    transition-delay: 0.3s;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox.opened .box_inner {
@@ -1988,11 +2094,11 @@ h6 {
     border: 2px solid #fff;
     border-radius: 10px;
     position: relative;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox .close a:hover {
@@ -2060,11 +2166,11 @@ h6 {
 .tokyo_tm_modalbox .date a {
     text-decoration: none;
     color: #767676;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox .date a:hover {
@@ -2222,19 +2328,19 @@ body.modal {
 
 .tokyo_tm_contact .fields ul li input {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: transparent;
     font-style: italic;
 }
 
 .tokyo_tm_contact .fields ul li input:focus {
     outline: none;
-    border: 1px solid rgba(0, 0, 0, .5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .tokyo_tm_contact .fields .last textarea {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     height: 120px;
     resize: none;
     margin-bottom: 20px;
@@ -2244,11 +2350,11 @@ body.modal {
 
 .tokyo_tm_contact .fields .last textarea:focus {
     outline: none;
-    border: 1px solid rgba(0, 0, 0, .5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .tokyo_tm_contact .empty_notice {
-    color: #F52225;
+    color: #f52225;
     margin-bottom: 7px;
     display: none;
     text-align: left;
@@ -2256,13 +2362,13 @@ body.modal {
 }
 
 .tokyo_tm_contact .contact_error {
-    color: #F52225;
+    color: #f52225;
     text-align: left;
     font-weight: 500;
 }
 
 .tokyo_tm_contact .returnmessage {
-    color: #3A00FF;
+    color: #3a00ff;
     margin-bottom: 7px;
     text-align: left;
     font-weight: 500;
@@ -2294,8 +2400,16 @@ body.modal {
     height: 6px;
     z-index: 50;
     background-color: #000;
-    -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
-    transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
+    -webkit-transition:
+        width 0.3s ease-in-out,
+        height 0.3s ease-in-out,
+        margin 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+    transition:
+        width 0.3s ease-in-out,
+        height 0.3s ease-in-out,
+        margin 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
 }
 
 .cursor-inner.cursor-hover {
@@ -2304,7 +2418,7 @@ body.modal {
     width: 80px;
     height: 80px;
     background-color: #000;
-    opacity: .3;
+    opacity: 0.3;
 }
 
 .cursor-outer {
@@ -2316,9 +2430,9 @@ body.modal {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 50;
-    opacity: .5;
-    -webkit-transition: all .08s ease-out;
-    transition: all .08s ease-out;
+    opacity: 0.5;
+    -webkit-transition: all 0.08s ease-out;
+    transition: all 0.08s ease-out;
 }
 
 .cursor-outer.cursor-hover {
@@ -2702,7 +2816,7 @@ body.modal {
 html {
     overflow: hidden;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 body {
@@ -2722,12 +2836,12 @@ body {
 }
 
 .portfolioGif {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     margin-bottom: 5px;
 }
 
 .portfolio-caption {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
 }
 
 svg {
@@ -2740,29 +2854,35 @@ img.svg {
     height: 30px;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
     color: #6f6f6f;
 }
 
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #6f6f6f;
-    opacity: 1;
-}
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
     color: #6f6f6f;
     opacity: 1;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #6f6f6f;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: #6f6f6f;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: #6f6f6f;
 }
 
-::placeholder { /* Most modern browsers support this now. */
+::placeholder {
+    /* Most modern browsers support this now. */
     color: #6f6f6f;
 }
 
@@ -2777,7 +2897,12 @@ img.svg {
     clear: both;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 500;
     line-height: 1.4;
     font-family: "Montserrat";
@@ -2835,7 +2960,7 @@ h6 {
 
 #preloader:before,
 #preloader:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -2865,7 +2990,7 @@ h6 {
 }
 
 .loader_line:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 50%;
@@ -2882,7 +3007,7 @@ h6 {
 }
 
 .loader_line:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -3010,11 +3135,11 @@ h6 {
     width: 200px;
     z-index: 15;
     background-color: #fff;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_mobile_menu.opened {
@@ -3092,11 +3217,11 @@ h6 {
     display: inline-block;
     font-weight: 500;
     font-family: "Montserrat";
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_all_wrap .leftpart .menu ul li a:hover {
@@ -3126,11 +3251,11 @@ h6 {
     text-decoration: none;
     color: #787878;
     font-weight: 500;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_all_wrap .leftpart .copyright a:hover {
@@ -3171,10 +3296,18 @@ h6 {
     opacity: 0;
     visibility: hidden;
     z-index: 8;
-    transition: visibility 1s linear, opacity 0s linear;
-    -moz-transition: visibility 1s linear, opacity 0s linear;
-    -webkit-transition: visibility1s linear, opacity 0s linear;
-    -o-transition: visibility 1s linear, opacity 0s linear;
+    transition:
+        visibility 1s linear,
+        opacity 0s linear;
+    -moz-transition:
+        visibility 1s linear,
+        opacity 0s linear;
+    -webkit-transition:
+        visibility1s linear,
+        opacity 0s linear;
+    -o-transition:
+        visibility 1s linear,
+        opacity 0s linear;
 }
 
 .tokyo_tm_section.animated {
@@ -3237,9 +3370,9 @@ h6 {
     background-size: cover;
     animation: morph 8s ease-in-out infinite 1s;
     background-blend-mode: multiply;
-    -webkit-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
-    -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
-    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
+    -webkit-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
     background-color: transparent;
 }
 
@@ -3299,11 +3432,11 @@ h6 {
     text-decoration: none;
     color: #000;
     font-size: 20px;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_home .social ul li a:hover {
@@ -3346,7 +3479,7 @@ h6 {
 
 .tokyo_tm_about .about_image img {
     min-width: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
 }
 
 .tokyo_tm_about .description {
@@ -3371,15 +3504,18 @@ h6 {
     width: 140px !important;
     height: 50px !important;
     color: #fff !important;
-    border-radius: .25rem !important;
+    border-radius: 0.25rem !important;
     padding: 10px 25px !important;
-    font-family: 'Lato', sans-serif !important;
+    font-family: "Lato", sans-serif !important;
     font-weight: 500 !important;
     cursor: pointer !important;
     transition: all 0.3s ease !important;
     position: relative !important;
     display: inline-block !important;
-    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1), 4px 4px 5px 0 rgba(0, 0, 0, .1);
+    box-shadow:
+        inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0 rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0 rgba(0, 0, 0, 0.1);
     outline: none;
     text-decoration: none !important;
 }
@@ -3400,7 +3536,10 @@ h6 {
     z-index: -1;
     background-color: #663dff;
     border-radius: 5px;
-    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5), 7px 7px 20px 0 rgba(0, 0, 0, .1), 4px 4px 5px 0 rgba(0, 0, 0, .1);
+    box-shadow:
+        inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0 rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0 rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
@@ -3455,11 +3594,11 @@ h6 {
 .tokyo_tm_about .description .right > ul > li a {
     text-decoration: none;
     color: #787878;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_about .description .right > ul > li a:hover {
@@ -3474,14 +3613,14 @@ h6 {
     right: 0;
     height: 100vh;
     z-index: 15;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox_about.opened {
@@ -3505,12 +3644,12 @@ h6 {
     opacity: 0;
     visibility: hidden;
     margin-top: -20px;
-    transition-delay: .3s;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    transition-delay: 0.3s;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox_about.opened .box_inner {
@@ -3537,11 +3676,11 @@ h6 {
     color: #fff;
     border-radius: 10px;
     position: relative;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox_about .close a:hover {
@@ -3636,7 +3775,7 @@ h6 {
 }
 
 .progress_inner .background {
-    background: rgba(0, 0, 0, .09);
+    background: rgba(0, 0, 0, 0.09);
     width: 100%;
     min-width: 100%;
     position: relative;
@@ -3656,9 +3795,9 @@ h6 {
 }
 
 .progress_inner .background .bar.open {
-    -webkit-animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000); /* Safari 4+ */
-    -moz-animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000); /* Fx 5+ */
-    animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000); /* IE 10+ */
+    -webkit-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* Safari 4+ */
+    -moz-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* Fx 5+ */
+    animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* IE 10+ */
     width: 100%;
 }
 
@@ -3724,7 +3863,7 @@ h6 {
     clear: both;
     float: left;
     position: relative;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 40px 20px;
 }
@@ -3754,12 +3893,12 @@ h6 {
 
 .tokyo_tm_modalbox_about .partners ul li {
     margin: 0;
-    opacity: .5;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox_about .partners ul li:hover {
@@ -3785,7 +3924,7 @@ h6 {
 
 .tokyo_tm_title span {
     display: inline-block;
-    background-color: rgba(0, 0, 0, .04);
+    background-color: rgba(0, 0, 0, 0.04);
     text-transform: uppercase;
     padding: 4px 10px;
     font-weight: 600;
@@ -3825,11 +3964,11 @@ h6 {
     display: inline-block;
     font-weight: 500;
     font-family: "Montserrat";
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_portfolio .portfolio_filter ul li a.current {
@@ -3892,11 +4031,11 @@ h6 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_portfolio .portfolio_list li .inner:hover .main_image {
@@ -4059,11 +4198,11 @@ h6 {
 .tokyo_tm_modalbox .main_details .detailbox span a {
     text-decoration: none;
     color: #767676;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox .main_details .detailbox span a:hover {
@@ -4174,7 +4313,7 @@ h6 {
     clear: both;
     float: left;
     position: relative;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .07);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
 }
 
 .tokyo_tm_news ul li .image {
@@ -4196,11 +4335,11 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_news ul li .list_inner .image:hover .main {
@@ -4212,15 +4351,15 @@ h6 {
     float: left;
     padding: 30px 40px 25px 40px;
     background-color: #fff;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_news ul li .list_inner:hover .details {
-    box-shadow: 0 0 20px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
 }
 
 .tokyo_tm_news ul li .details .title {
@@ -4234,11 +4373,11 @@ h6 {
     font-size: 18px;
     font-weight: 600;
     display: inline-block;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_news ul li .details .title a:hover {
@@ -4255,11 +4394,11 @@ h6 {
 .tokyo_tm_news ul li .details .date a {
     text-decoration: none;
     color: #767676;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_news ul li .details .date a:hover {
@@ -4290,7 +4429,7 @@ h6 {
     content: "";
     width: 100%;
     height: 1px;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, 0.1);
     bottom: -7px;
 }
 
@@ -4318,7 +4457,7 @@ h6 {
 
 .tokyo_tm_read_more a:before {
     position: absolute;
-    content: '';
+    content: "";
     background-color: #000;
     margin: auto;
     width: 100%;
@@ -4326,12 +4465,12 @@ h6 {
     top: 0;
     left: 0;
     bottom: 0;
-    transform: scaleX(.2);
+    transform: scaleX(0.2);
     transform-origin: left center;
     animation: read-more-anim;
     animation-fill-mode: forwards;
-    animation-duration: .4s;
-    animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.6, 0.01, 0, 1);
 }
 
 .tokyo_tm_read_more a span {
@@ -4339,15 +4478,15 @@ h6 {
     position: relative;
     background-color: #fff;
     z-index: 1;
-    transition: .6s cubic-bezier(.6, .01, 0, 1);
+    transition: 0.6s cubic-bezier(0.6, 0.01, 0, 1);
     transform: translateX(-110%);
 }
 
 .tokyo_tm_news ul li .list_inner:hover .tokyo_tm_read_more a:before {
     animation: read-more-anim-2;
     animation-fill-mode: forwards;
-    animation-duration: .4s;
-    animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.6, 0.01, 0, 1);
 }
 
 .tokyo_tm_news ul li .list_inner:hover .tokyo_tm_read_more a span {
@@ -4357,7 +4496,7 @@ h6 {
 @keyframes read-more-anim {
     0% {
         transform-origin: right center;
-        transform: scaleX(.2);
+        transform: scaleX(0.2);
     }
 
     70% {
@@ -4371,14 +4510,14 @@ h6 {
 
     100% {
         transform-origin: left center;
-        transform: scaleX(.2);
+        transform: scaleX(0.2);
     }
 }
 
 @keyframes read-more-anim-2 {
     0% {
         transform-origin: left center;
-        transform: scaleX(.2);
+        transform: scaleX(0.2);
     }
 
     70% {
@@ -4392,7 +4531,7 @@ h6 {
 
     100% {
         transform-origin: right center;
-        transform: scaleX(.2);
+        transform: scaleX(0.2);
     }
 }
 
@@ -4409,7 +4548,7 @@ h6 {
     content: "";
     width: 100%;
     height: 1px;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, 0.1);
     bottom: -10px;
 }
 
@@ -4433,14 +4572,14 @@ h6 {
     right: 0;
     height: 100vh;
     z-index: 15;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox.opened {
@@ -4464,12 +4603,12 @@ h6 {
     opacity: 0;
     visibility: hidden;
     margin-top: -20px;
-    transition-delay: .3s;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    transition-delay: 0.3s;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox.opened .box_inner {
@@ -4495,11 +4634,11 @@ h6 {
     border: 2px solid #fff;
     border-radius: 10px;
     position: relative;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox .close a:hover {
@@ -4567,11 +4706,11 @@ h6 {
 .tokyo_tm_modalbox .date a {
     text-decoration: none;
     color: #767676;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .tokyo_tm_modalbox .date a:hover {
@@ -4729,19 +4868,19 @@ body.modal {
 
 .tokyo_tm_contact .fields ul li input {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: transparent;
     font-style: italic;
 }
 
 .tokyo_tm_contact .fields ul li input:focus {
     outline: none;
-    border: 1px solid rgba(0, 0, 0, .5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .tokyo_tm_contact .fields .last textarea {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     height: 120px;
     resize: none;
     margin-bottom: 20px;
@@ -4751,11 +4890,11 @@ body.modal {
 
 .tokyo_tm_contact .fields .last textarea:focus {
     outline: none;
-    border: 1px solid rgba(0, 0, 0, .5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .tokyo_tm_contact .empty_notice {
-    color: #F52225;
+    color: #f52225;
     margin-bottom: 7px;
     display: none;
     text-align: left;
@@ -4763,13 +4902,13 @@ body.modal {
 }
 
 .tokyo_tm_contact .contact_error {
-    color: #F52225;
+    color: #f52225;
     text-align: left;
     font-weight: 500;
 }
 
 .tokyo_tm_contact .returnmessage {
-    color: #3A00FF;
+    color: #3a00ff;
     margin-bottom: 7px;
     text-align: left;
     font-weight: 500;
@@ -4801,8 +4940,16 @@ body.modal {
     height: 6px;
     z-index: 50;
     background-color: #000;
-    -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
-    transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
+    -webkit-transition:
+        width 0.3s ease-in-out,
+        height 0.3s ease-in-out,
+        margin 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
+    transition:
+        width 0.3s ease-in-out,
+        height 0.3s ease-in-out,
+        margin 0.3s ease-in-out,
+        opacity 0.3s ease-in-out;
 }
 
 .cursor-inner.cursor-hover {
@@ -4811,7 +4958,7 @@ body.modal {
     width: 80px;
     height: 80px;
     background-color: #000;
-    opacity: .3;
+    opacity: 0.3;
 }
 
 .cursor-outer {
@@ -4823,9 +4970,9 @@ body.modal {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 50;
-    opacity: .5;
-    -webkit-transition: all .08s ease-out;
-    transition: all .08s ease-out;
+    opacity: 0.5;
+    -webkit-transition: all 0.08s ease-out;
+    transition: all 0.08s ease-out;
 }
 
 .cursor-outer.cursor-hover {

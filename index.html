@@ -1,484 +1,670 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <title>Ember Mills | Senior Full Stack Engineer</title>
+        <meta
+            name="description"
+            content="Portfolio of Ember Mills: Senior Full Stack Engineer building accessible, inclusive web apps with .NET, React, Python, and more."
+        />
+        <link rel="canonical" href="https://www.emills.net/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Ember Mills | Senior Full Stack Engineer" />
+        <meta
+            property="og:description"
+            content="Portfolio of Ember Mills: Senior Full Stack Engineer building accessible, inclusive web apps with .NET, React, Python, and more."
+        />
+        <meta property="og:url" content="https://www.emills.net/" />
+        <meta property="og:image" content="https://www.emills.net/img/about/ember_avatar.png" />
 
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="robots" content="index, follow"/>
-    <title>Ember Mills | Senior Full Stack Engineer</title>
-    <meta name="description"
-          content="Portfolio of Ember Mills: Senior Full Stack Engineer building accessible, inclusive web apps with .NET, React, Python, and more."
-    />
-    <link rel="canonical" href="https://www.emills.net/"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Ember Mills | Senior Full Stack Engineer"/>
-    <meta property="og:description"
-          content="Portfolio of Ember Mills: Senior Full Stack Engineer building accessible, inclusive web apps with .NET, React, Python, and more."
-    />
-    <meta property="og:url" content="https://www.emills.net/"/>
-    <meta
-            property="og:image"
-            content="https://www.emills.net/img/about/ember_avatar.png"
-    />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ember Mills | Senior Full Stack Engineer" />
+        <meta
+            name="twitter:description"
+            content="Portfolio of Ember Mills: Senior Full Stack Engineer building accessible, inclusive web apps with .NET, React, Python, and more."
+        />
+        <meta name="twitter:image" content="https://www.emills.net/img/about/ember_avatar.png" />
 
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Ember Mills | Senior Full Stack Engineer"/>
-    <meta name="twitter:description"
-          content="Portfolio of Ember Mills: Senior Full Stack Engineer building accessible, inclusive web apps with .NET, React, Python, and more."
-    />
-    <meta name="twitter:image"
-          content="https://www.emills.net/img/about/ember_avatar.png"
-    />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Ember Mills",
+                "jobTitle": "Senior Full Stack Engineer",
+                "description": "Senior Full Stack Engineer building accessible, inclusive web apps with .NET, React, Python, and more.",
+                "url": "https://www.emills.net",
+                "image": "https://www.emills.net/img/about/ember_avatar.png",
+                "sameAs": [
+                    "https://www.linkedin.com/in/ember-d-mills",
+                    "https://github.com/embmeals",
+                    "https://codepen.io/ambmeals"
+                ],
+                "knowsAbout": ["Full Stack Development", ".NET", "React", "Python", "Web Accessibility", "DevOps"],
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Self-Employed"
+                }
+            }
+        </script>
 
-    <!-- Content rating: some sections contain mature artistic content -->
-    <meta name="rating" content="mature">
+        <meta name="rating" content="mature" />
 
-    <link rel="icon" href="/img/favicon/android-icon-32x32.png" sizes="32x32"/>
-    <link rel="icon" href="/img/favicon/android-icon-16x16.png" sizes="16x16"/>
-    <link rel="shortcut icon" href="/img/favicon/favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;800&display=swap"
-          rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
-          rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/plugins.css"/>
-    <link rel="stylesheet" href="css/dark.css"/>
-    <link rel="stylesheet" href="css/colors.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-pO8X2+rsq5XnSFMbYHhXQZvPZzFjMfZXv7vz/6QvBxw58OoGZQ4mxnYinks1JvlBpyuVPR7mMwjJT9lgG8Yinqg=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-    />
-</head>
+        <link rel="icon" href="/img/favicon/android-icon-32x32.png" sizes="32x32" />
+        <link rel="icon" href="/img/favicon/android-icon-16x16.png" sizes="16x16" />
+        <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/plugins.css" />
+        <link rel="stylesheet" href="css/dark.css" />
+        <link rel="stylesheet" href="css/colors.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-pO8X2+rsq5XnSFMbYHhXQZvPZzFjMfZXv7vz/6QvBxw58OoGZQ4mxnYinks1JvlBpyuVPR7mMwjJT9lgG8Yinqg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
 
-<body class="dark" id="body">
-<div class="tokyo_tm_all_wrap" data-magic-cursor="show" data-color="blue" data-enter="fadeInRightBig"
-     data-exit="fadeOutRightBig">
-
-    <div id="preloader">
-        <div class="loader_line"></div>
-    </div>
-    <div class="tokyo_tm_topbar">
-        <div class="topbar_inner">
-            <div class="trigger">
-                <div class="hamburger hamburger--slider">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </div>
+    <body class="dark" id="body">
+        <div
+            class="tokyo_tm_all_wrap"
+            data-magic-cursor="show"
+            data-color="blue"
+            data-enter="fadeInRightBig"
+            data-exit="fadeOutRightBig"
+        >
+            <div id="preloader" role="progressbar" aria-label="Loading content">
+                <div class="loader_line"></div>
             </div>
-        </div>
-    </div>
-    <div class="tokyo_tm_mobile_menu">
-        <div class="menu_list">
-            <ul class="transition_link">
-                <li class="active">
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#art">Gallery</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="leftpart">
-        <div class="leftpart_inner">
-            <div class="menu">
-                <ul class="transition_link">
-                    <li class="active">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#art">Gallery</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="rightpart">
-        <div class="rightpart_in">
-            <div id="home" class="tokyo_tm_section animated">
-                <div class="container">
-                    <div class="tokyo_tm_home">
-                        <div class="home_content">
-                            <div class="avatar">
-                                <div class="image" data-img-url="img/about/ember_avatar.png"></div>
+
+            <header class="tokyo_tm_topbar">
+                <div class="topbar_inner">
+                    <div class="trigger">
+                        <div class="hamburger hamburger--slider">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
                             </div>
                         </div>
-                        <div class="details">
-                            <h3 class="name">Ember <span>Mills</span></h3>
-                            <div class="social">
+                    </div>
+                </div>
+            </header>
+
+            <nav class="tokyo_tm_mobile_menu" aria-label="Mobile navigation">
+                <div class="menu_list">
+                    <ul class="transition_link">
+                        <li class="active">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#art">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <aside class="leftpart">
+                <div class="leftpart_inner">
+                    <nav class="menu" aria-label="Main navigation">
+                        <ul class="transition_link">
+                            <li class="active">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#art">Gallery</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <main class="rightpart">
+                <div class="rightpart_in">
+                    <section id="home" class="tokyo_tm_section animated">
+                        <div class="container">
+                            <h1 class="visually-hidden">Ember Mills | Senior Full Stack Engineer</h1>
+                            <div class="tokyo_tm_home">
+                                <div class="home_content">
+                                    <div class="avatar">
+                                        <div class="image" data-img-url="img/about/ember_avatar.png"></div>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3 class="name">Ember <span>Mills</span></h3>
+                                    <div class="social">
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="https://www.linkedin.com/in/ember-d-mills"
+                                                    aria-label="LinkedIn"
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    <img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+                                                        alt="LinkedIn"
+                                                        width="30"
+                                                        height="30"
+                                                    />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://github.com/embmeals"
+                                                    aria-label="GitHub"
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    <img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg"
+                                                        alt="GitHub"
+                                                        width="30"
+                                                        height="30"
+                                                    />
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="https://codepen.io/ambmeals"
+                                                    aria-label="CodePen"
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    <img
+                                                        src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/codepen.svg"
+                                                        alt="CodePen"
+                                                        width="30"
+                                                        height="30"
+                                                    />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="about" class="tokyo_tm_section">
+                        <div class="container">
+                            <div class="tokyo_tm_about">
+                                <div class="about_image">
+                                    <img src="img/about/typeCat.gif" alt="Animated cat typing on a keyboard" />
+                                    <div class="main" data-img-url="img/about/typeCat.gif"></div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <h3 class="name">Ember Mills | <span>Senior Full Stack Engineer</span></h3>
+                                <div class="description_inner">
+                                    <div class="left">
+                                        <p>
+                                            Hello! I'm Ember Mills, a Senior Full Stack Engineer who loves building
+                                            things that live on the web. My passion for web development started back in
+                                            2004, when I hacked together custom MySpace page themes. That hands-on
+                                            tinkering helped me with the beginning fundamentals of HTML and CSS.
+                                            <br />
+                                            Fast-forward to today: I've spent the past six years building and
+                                            maintaining full-stack .NET applications, integrating CMS solutions, and
+                                            automating workflows with modern DevOps tools. My current focus is on
+                                            crafting inclusive, accessible digital experiences that delight users and
+                                            stand up to real-world demands.<br />
+                                        </p>
+                                        <br />
+                                        <div class="button-group">
+                                            <div class="tokyo_tm_button">
+                                                <div class="tokyo_tm_button">
+                                                    <a href="#" class="custom-btn btn-15">Learn More</a>
+                                                </div>
+                                            </div>
+                                            <a
+                                                href="/resume.html"
+                                                target="_blank"
+                                                class="resume-btn"
+                                                aria-label="Download Ember Mills's resume"
+                                            >
+                                                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                                                View Resume
+                                            </a>
+                                        </div>
+
+                                        <br /><br /><br /><br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="art" class="tokyo_tm_section">
+                        <div class="container">
+                            <div class="tokyo_tm_art">
+                                <header class="tokyo_tm_title">
+                                    <div class="title_flex">
+                                        <div class="left">
+                                            <span>Gallery</span>
+                                            <h3>Collage Folders</h3>
+                                        </div>
+                                    </div>
+                                </header>
+
+                                <div class="art_folders">
+                                    <div
+                                        class="folder gallery_zoom"
+                                        data-creator="ember"
+                                        data-medium="digital"
+                                        data-nsfw="false"
+                                    >
+                                        <div class="icon" aria-hidden="true"></div>
+                                        <h4 class="label">Ember</h4>
+                                        <a
+                                            class="open open-btn"
+                                            href="img/collages/ember/collage003.png"
+                                            title="Ember collage 003"
+                                            >Open</a
+                                        >
+                                        <div class="hidden-images" aria-hidden="true">
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/ember/collage026.png"
+                                                title="Ember collage 026"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/ember/dogCollage001.jpg"
+                                                title="Ember dog collage"
+                                            ></a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="folder gallery_zoom"
+                                        data-creator="casey"
+                                        data-medium="digital"
+                                        data-nsfw="false"
+                                    >
+                                        <div class="icon" aria-hidden="true"></div>
+                                        <h4 class="label">Casey</h4>
+                                        <a
+                                            class="open open-btn"
+                                            href="img/collages/casey/collage010.png"
+                                            title="Casey collage 010"
+                                            >Open</a
+                                        >
+                                        <div class="hidden-images" aria-hidden="true">
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/collage011.png"
+                                                title="Casey collage 011"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/collage012.png"
+                                                title="Casey collage 012"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/collage018.png"
+                                                title="Casey collage 018"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/collage021.png"
+                                                title="Casey collage 021"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/collage022.png"
+                                                title="Casey collage 022"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/collage027.png"
+                                                title="Casey collage 027"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/collage030.png"
+                                                title="Casey collage 030"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/xmas_photo_trimmed_4.png"
+                                                title="Casey Christmas Photo"
+                                            ></a>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="folder gallery_zoom"
+                                        data-creator="casey"
+                                        data-medium="digital"
+                                        data-nsfw="true"
+                                    >
+                                        <div class="icon" aria-hidden="true"></div>
+                                        <h4 class="label">X-Rated <span class="badge badge-18">18+</span></h4>
+                                        <a
+                                            class="open open-btn"
+                                            data-nsfw-open="true"
+                                            href="img/collages/casey/x-rated/collage001.png"
+                                            title="X-Rated 001"
+                                            aria-controls="nsfw_disclaimer"
+                                            >Open</a
+                                        >
+                                        <div class="hidden-images" aria-hidden="true">
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/x-rated/collage002.png"
+                                                title="X-Rated 002"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/x-rated/collage020.png"
+                                                title="X-Rated 020"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/x-rated/collage020.png"
+                                                title="X-Rated 020"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/x-rated/collage023.png"
+                                                title="X-Rated 023"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/x-rated/collage024.png"
+                                                title="X-Rated 024"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/x-rated/collage025.png"
+                                                title="X-Rated 025"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/x-rated/collage028.png"
+                                                title="X-Rated 028"
+                                            ></a>
+                                            <a
+                                                class="zoom"
+                                                href="img/collages/casey/x-rated/collage029.png"
+                                                title="X-Rated 029"
+                                            ></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    id="nsfw_disclaimer"
+                                    class="nsfw_modal"
+                                    aria-hidden="true"
+                                    role="dialog"
+                                    aria-modal="true"
+                                >
+                                    <div class="nsfw_content">
+                                        <h3>Adult Content Ahead</h3>
+                                        <p>
+                                            This section contains artistic nudity and mature themes. It is presented as
+                                            freedom of expression and may not be suitable for all audiences.
+                                        </p>
+                                        <p>By continuing you confirm you are 18+ and wish to proceed.</p>
+                                        <div class="actions">
+                                            <button type="button" class="btn_cancel" data-nsfw-cancel>Go Back</button>
+                                            <button type="button" class="btn_confirm" data-nsfw-accept>Enter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="portfolio" class="tokyo_tm_section">
+                        <div class="container">
+                            <div class="tokyo_tm_news">
+                                <header class="tokyo_tm_title">
+                                    <div class="title_flex">
+                                        <div class="left">
+                                            <span>Portfolio</span>
+                                            <h3>Latest Projects</h3>
+                                        </div>
+                                    </div>
+                                </header>
                                 <ul>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/ember-d-mills"
-                                           aria-label="LinkedIn" target="_blank" rel="noreferrer">
-                                            <img
-                                                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
-                                                    alt="LinkedIn"
-                                                    width="30"
-                                                    height="30"
-                                            />
-                                        </a>
+                                        <div class="list_inner">
+                                            <div class="image portfolioGif" style="height: 250px">
+                                                <img
+                                                    src="project-gifs/Screenshot_url.png"
+                                                    alt="URL response validator"
+                                                />
+                                                <div class="main" data-img-url="project-gifs/Screenshot_url.png"></div>
+                                            </div>
+                                            <div class="details portfolio-caption">
+                                                <h3 class="title">
+                                                    <a href="http://urlscannew.azurewebsites.net/" target="_blank">
+                                                        URL Validator - CSV Upload
+                                                    </a>
+                                                </h3>
+                                                <div class="tokyo_tm_read_more">
+                                                    <a href="https://github.com/embmeals/URLValidator" target="_blank">
+                                                        <span>Github repo</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/embmeals"
-                                           aria-label="GitHub" target="_blank" rel="noreferrer">
-                                            <img
-                                                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg"
-                                                    alt="GitHub"
-                                                    width="30"
-                                                    height="30"
-                                            />
-                                        </a>
+                                        <div class="list_inner">
+                                            <div class="image portfolioGif" style="height: 250px">
+                                                <img src="project-gifs/pagination.gif" alt="jQuery pagination demo" />
+                                                <div class="main" data-img-url="project-gifs/pagination.gif"></div>
+                                            </div>
+                                            <div class="details portfolio-caption">
+                                                <h3 class="title">
+                                                    <a href="https://www.emills.net/pagination/" target="_blank">
+                                                        Pagination Built w/jQuery
+                                                    </a>
+                                                </h3>
+                                                <div class="tokyo_tm_read_more">
+                                                    <a href="https://github.com/embmeals/pagination" target="_blank">
+                                                        <span>Github repo</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li>
-                                        <a href="https://codepen.io/ambmeals"
-                                           aria-label="CodePen" target="_blank" rel="noreferrer">
-                                            <img
-                                                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/codepen.svg"
-                                                    alt="CodePen"
-                                                    width="30"
-                                                    height="30"
-                                            />
-                                        </a>
+                                        <div class="list_inner">
+                                            <div class="image portfolioGif" style="height: 250px">
+                                                <img
+                                                    src="project-gifs/task-management-new.png"
+                                                    alt="Screenshot of React & .NET task management app"
+                                                />
+                                                <div
+                                                    class="main"
+                                                    data-img-url="project-gifs/task-management-new.png"
+                                                ></div>
+                                            </div>
+                                            <div class="details portfolio-caption">
+                                                <h3 class="title">
+                                                    <a
+                                                        href="https://task-management-frontend-swart-five.vercel.app"
+                                                        target="_blank"
+                                                    >
+                                                        React & .NET API App
+                                                    </a>
+                                                </h3>
+                                                <div class="tokyo_tm_read_more">
+                                                    <a
+                                                        href="https://github.com/embmeals/TaskManagementAPI"
+                                                        target="_blank"
+                                                    >
+                                                        <span>Github repo \\ C# backend</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_inner">
+                                            <div class="image portfolioGif">
+                                                <img
+                                                    src="project-gifs/sassLandingPage.gif"
+                                                    alt="SASS landing page animation"
+                                                />
+                                                <div
+                                                    class="main"
+                                                    data-img-url="project-gifs/sassLandingPage.gif"
+                                                    role="img"
+                                                ></div>
+                                            </div>
+                                            <div class="details portfolio-caption">
+                                            <h3 class="title">
+                                                <a href="https://www.emills.net/Sass/" target="_blank">
+                                                    SASS Landing Page Example
+                                                </a>
+                                            </h3>
+                                            <div class="tokyo_tm_read_more">
+                                                <a href="https://github.com/embmeals/Sass" target="_blank">
+                                                    <span>Github repo</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_inner">
+                                            <div class="image portfolioGif" style="height: 250px">
+                                                <img
+                                                    src="project-gifs/blindDate.gif"
+                                                    alt="C# text adventure: Blind Date animation"
+                                                />
+                                                <div class="main" data-img-url="project-gifs/blindDate.gif"></div>
+                                            </div>
+                                            <div class="details portfolio-caption">
+                                                <h3 class="title">
+                                                    <a href="https://github.com/embmeals/BlindDate" target="_blank">
+                                                        C# Text Adventure: Blind Date<br />A Custom Word Adventure
+                                                        Project
+                                                    </a>
+                                                </h3>
+                                                <div class="tokyo_tm_read_more">
+                                                    <a href="https://github.com/embmeals/BlindDate" target="_blank">
+                                                        <span>Github repo</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_inner">
+                                            <div class="image portfolioGif">
+                                                <img
+                                                    src="project-gifs/cSharpGradeBook.gif"
+                                                    alt="C# fundamentals gradebook demo"
+                                                />
+                                                <div class="main" data-img-url="project-gifs/cSharpGradeBook.gif"></div>
+                                            </div>
+                                            <div class="details portfolio-caption">
+                                                <h3 class="title">
+                                                    <a
+                                                        href="https://github.com/embmeals/cSharpFundamentalsGradebook"
+                                                        target="_blank"
+                                                    >
+                                                        PluralSight C# Fundamentals with Unit Testing
+                                                    </a>
+                                                </h3>
+                                                <div class="tokyo_tm_read_more">
+                                                    <a
+                                                        href="https://github.com/embmeals/cSharpFundamentalsGradebook"
+                                                        target="_blank"
+                                                    >
+                                                        <span>Github repo</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_inner">
+                                            <div class="image portfolioGif">
+                                                <img
+                                                    src="project-gifs/christmasCharities.gif"
+                                                    alt="Christmas charity donations webpage demo"
+                                                />
+                                                <div class="main" data-img-url="project-gifs/christmasCharities.gif"></div>
+                                            </div>
+                                            <div class="details portfolio-caption">
+                                                <h3 class="title">
+                                                    <a href="https://thetourvilles.com/" target="_blank">
+                                                        A Webpage to Display Chosen Christmas Charity Donations for 2022
+                                                    </a>
+                                                </h3>
+                                                <div class="tokyo_tm_read_more">
+                                                    <a
+                                                        href="https://github.com/embmeals/ChristmasCharities"
+                                                        target="_blank"
+                                                    >
+                                                        <span>Github repo</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_inner">
+                                            <div class="image portfolioGif" style="height: 250px">
+                                                <img
+                                                    src="project-gifs/weblow.io.png"
+                                                    alt="Webflow portfolio site screenshot"
+                                                />
+                                                <div class="main" data-img-url="project-gifs/webflow.io.png"></div>
+                                            </div>
+                                            <div class="details portfolio-caption">
+                                                <h3 class="title">
+                                                    <a href="https://mills-codes.webflow.io/" target="_blank">
+                                                        Webflow.io website for fun
+                                                    </a>
+                                                </h3>
+                                                <div class="tokyo_tm_read_more">
+                                                    <a href="https://mills-codes.webflow.io/" target="_blank">
+                                                        <span>Webflow website</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
-                    </div>
+                    </section>
                 </div>
-            </div>
-            <div id="about" class="tokyo_tm_section">
-                <div class="container">
-                    <div class="tokyo_tm_about">
-                        <div class="about_image">
-                            <img src="img/about/typeCat.gif" alt="Animated cat typing on a keyboard"/>
-                            <div class="main" data-img-url="img/about/typeCat.gif"></div>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <h3 class="name">Ember Mills |<span>| Senior Full Stack Engineer</span></h3>
-                        <div class="description_inner">
-                            <div class="left">
-                                <p>
-                                    Hello! I’m Ember Mills, a Senior Full Stack Engineer who loves building things
-                                    that live on the web. My passion for web development started back in 2004, when I
-                                    hacked together custom MySpace page themes. That hands-on tinkering helped me with
-                                    the
-                                    beginning fundamentals of HTML and CSS.
-                                    <br/>
-                                    Fast-forward to today: I’ve spent the past six years building and maintaining
-                                    full-stack .NET applications, integrating CMS solutions, and automating workflows
-                                    with modern DevOps
-                                    tools. My current focus is on crafting inclusive, accessible digital experiences
-                                    that delight users and stand up to real-world demands.<br/>
-                                </p><br/>
-                                <div class="button-group">
-                                    <div class="tokyo_tm_button">
-                                        <div class="tokyo_tm_button">
-                                            <a href="#" class="custom-btn btn-15">Learn More</a>
-                                        </div>
-                                    </div>
-                                    <a href="/resume.html"
-                                       target="_blank" class="resume-btn"
-                                       aria-label="Download Ember Mills’s resume">
-                                        <i class="fas fa-file-alt" aria-hidden="true"></i>
-                                        View Resume
-                                    </a>
-                                </div>
+            </main>
+            <div class="mouse-cursor cursor-outer"></div>
+            <div class="mouse-cursor cursor-inner"></div>
 
-                                <br/><br/><br/><br/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Art section -->
-            <div id="art" class="tokyo_tm_section">
-                <div class="container">
-                    <div class="tokyo_tm_art">
-                        <div class="tokyo_tm_title">
-                            <div class="title_flex">
-                                <div class="left">
-                                    <span>Gallery</span>
-                                    <h3>Collage Folders</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="art_folders">
-                            <!-- Ember folder -->
-                            <div class="folder gallery_zoom" data-creator="ember" data-medium="digital" data-nsfw="false">
-                                <div class="icon" aria-hidden="true"></div>
-                                <h4 class="label">Ember</h4>
-                                <a class="open open-btn" href="img/collages/ember/collage003.png" title="Ember collage 003">Open</a>
-                                <div class="hidden-images" aria-hidden="true">
-                                    <a class="zoom" href="img/collages/ember/collage026.png" title="Ember collage 026"></a>
-                                    <a class="zoom" href="img/collages/ember/dogCollage001.jpg" title="Ember dog collage"></a>
-                                </div>
-                            </div>
-
-                            <!-- Casey folder -->
-                            <div class="folder gallery_zoom" data-creator="casey" data-medium="digital" data-nsfw="false">
-                                <div class="icon" aria-hidden="true"></div>
-                                <h4 class="label">Casey</h4>
-                                <a class="open open-btn" href="img/collages/casey/collage010.png" title="Casey collage 010">Open</a>
-                                <div class="hidden-images" aria-hidden="true">
-                                    <a class="zoom" href="img/collages/casey/collage011.png" title="Casey collage 011"></a>
-                                    <a class="zoom" href="img/collages/casey/collage012.png" title="Casey collage 012"></a>
-                                    <a class="zoom" href="img/collages/casey/collage018.png" title="Casey collage 018"></a>
-                                    <a class="zoom" href="img/collages/casey/collage021.png" title="Casey collage 021"></a>
-                                    <a class="zoom" href="img/collages/casey/collage022.png" title="Casey collage 022"></a>
-                                    <a class="zoom" href="img/collages/casey/collage027.png" title="Casey collage 027"></a>
-                                    <a class="zoom" href="img/collages/casey/collage030.png" title="Casey collage 030"></a>
-                                    <a class="zoom" href="img/collages/casey/xmas_photo_trimmed_4.png" title="Casey Christmas Photo"></a>
-                                </div>
-                            </div>
-
-                            <!-- X-Rated folder (18+) -->
-                            <div class="folder gallery_zoom" data-creator="casey" data-medium="digital" data-nsfw="true">
-                                <div class="icon" aria-hidden="true"></div>
-                                <h4 class="label">X-Rated <span class="badge badge-18">18+</span></h4>
-                                <!-- Remove 'zoom' so popup doesn't bypass disclaimer -->
-                                <a class="open open-btn" data-nsfw-open="true" href="img/collages/casey/x-rated/collage001.png" title="X-Rated 001" aria-controls="nsfw_disclaimer">Open</a>
-                                <div class="hidden-images" aria-hidden="true">
-                                    <a class="zoom" href="img/collages/casey/x-rated/collage002.png" title="X-Rated 002"></a>
-                                    <a class="zoom" href="img/collages/casey/x-rated/collage020.png" title="X-Rated 020"></a>
-                                    <a class="zoom" href="img/collages/casey/x-rated/collage020.png" title="X-Rated 020"></a>
-                                    <a class="zoom" href="img/collages/casey/x-rated/collage023.png" title="X-Rated 023"></a>
-                                    <a class="zoom" href="img/collages/casey/x-rated/collage024.png" title="X-Rated 024"></a>
-                                    <a class="zoom" href="img/collages/casey/x-rated/collage025.png" title="X-Rated 025"></a>
-                                    <a class="zoom" href="img/collages/casey/x-rated/collage028.png" title="X-Rated 028"></a>
-                                    <a class="zoom" href="img/collages/casey/x-rated/collage029.png" title="X-Rated 029"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- NSFW disclaimer modal -->
-                        <div id="nsfw_disclaimer" class="nsfw_modal" aria-hidden="true" role="dialog" aria-modal="true">
-                            <div class="nsfw_content">
-                                <h3>Adult Content Ahead</h3>
-                                <p>
-                                    This section contains artistic nudity and mature themes. It is presented as
-                                    freedom of expression and may not be suitable for all audiences.
-                                </p>
-                                <p>By continuing you confirm you are 18+ and wish to proceed.</p>
-                                <div class="actions">
-                                    <button type="button" class="btn_cancel" data-nsfw-cancel>Go Back</button>
-                                    <button type="button" class="btn_confirm" data-nsfw-accept>Enter</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="portfolio" class="tokyo_tm_section">
-                <div class="container">
-                    <div class="tokyo_tm_news">
-                        <div class="tokyo_tm_title">
-                            <div class="title_flex">
-                                <div class="left">
-                                    <span>Portfolio</span>
-                                    <h3>Latest Projects</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <ul>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image portfolioGif" style="height: 250px">
-                                        <img src="project-gifs/Screenshot_url.png" alt="URL response validator"/>
-                                        <div class="main" data-img-url="project-gifs/Screenshot_url.png"></div>
-                                    </div>
-                                    <div class="details portfolio-caption">
-                                        <h3 class="title">
-                                            <a href="http://urlscannew.azurewebsites.net/" target="_blank">
-                                                URL Validator - CSV Upload
-                                            </a>
-                                        </h3>
-                                        <div class="tokyo_tm_read_more">
-                                            <a href="https://github.com/embmeals/URLValidator" target="_blank">
-                                                <span>Github repo</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image portfolioGif" style="height: 250px">
-                                        <img src="project-gifs/pagination.gif" alt="jQuery pagination demo"/>
-                                        <div class="main" data-img-url="project-gifs/pagination.gif"></div>
-                                    </div>
-                                    <div class="details portfolio-caption">
-                                        <h3 class="title">
-                                            <a href="https://www.emills.net/pagination/" target="_blank">
-                                                Pagination Built w/jQuery
-                                            </a>
-                                        </h3>
-                                        <div class="tokyo_tm_read_more">
-                                            <a href="https://github.com/embmeals/pagination" target="_blank">
-                                                <span>Github repo</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image portfolioGif" style="height: 250px">
-                                        <img src="project-gifs/task-management-new.png"
-                                             alt="Screenshot of React & .NET task management app"/>
-                                        <div class="main" data-img-url="project-gifs/task-management-new.png">
-                                        </div>
-                                    </div>
-                                    <div class="details portfolio-caption">
-                                        <h3 class="title">
-                                            <a href="https://task-management-frontend-swart-five.vercel.app"
-                                               target="_blank">
-                                                React & .NET API App
-                                            </a>
-                                        </h3>
-                                        <div class="tokyo_tm_read_more">
-                                            <a href="https://github.com/embmeals/TaskManagementAPI" target="_blank">
-                                                <span>Github repo \\ C# backend</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image portfolioGif">
-                                        <img src="project-gifs/sassLandingPage.gif" alt="SASS landing page animation"/>
-                                        <div class="main" data-img-url="project-gifs/sassLandingPage.gif" role="img"/>
-                                    </div>
-                                </div>
-                                <div class="details portfolio-caption">
-                                    <h3 class="title">
-                                        <a href="https://www.emills.net/Sass/" target="_blank">
-                                            SASS Landing Page Example
-                                        </a>
-                                    </h3>
-                                    <div class="tokyo_tm_read_more">
-                                        <a href="https://github.com/embmeals/Sass" target="_blank">
-                                            <span>Github repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image portfolioGif" style="height: 250px">
-                                        <img src="project-gifs/blindDate.gif"
-                                             alt="C# text adventure: Blind Date animation"/>
-                                        <div class="main" data-img-url="project-gifs/blindDate.gif"></div>
-                                    </div>
-                                    <div class="details portfolio-caption">
-                                        <h3 class="title">
-                                            <a href="https://github.com/embmeals/BlindDate" target="_blank">
-                                                C# Text Adventure: Blind Date<br>A Custom Word Adventure Project
-                                            </a>
-                                        </h3>
-                                        <div class="tokyo_tm_read_more">
-                                            <a href="https://github.com/embmeals/BlindDate" target="_blank">
-                                                <span>Github repo</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image portfolioGif">
-                                        <img src="project-gifs/cSharpGradeBook.gif"
-                                             alt="C# fundamentals gradebook demo"/>
-                                        <div class="main" data-img-url="project-gifs/cSharpGradeBook.gif"></div>
-                                    </div>
-                                    <div class="details portfolio-caption">
-                                        <h3 class="title">
-                                            <a href="https://github.com/embmeals/cSharpFundamentalsGradebook"
-                                               target="_blank">
-                                                PluralSight C# Fundamentals with Unit Testing
-                                            </a>
-                                        </h3>
-                                        <div class="tokyo_tm_read_more">
-                                            <a href="https://github.com/embmeals/cSharpFundamentalsGradebook"
-                                               target="_blank">
-                                                <span>Github repo</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image portfolioGif">
-                                        <img src="project-gifs/christmasCharities.gif"
-                                             alt="Christmas charity donations webpage demo"/>
-                                        <div class="main" data-img-url="project-gifs/christmasCharities.gif"/>
-                                    </div>
-                                </div>
-                                <div class="details portfolio-caption">
-                                    <h3 class="title">
-                                        <a href="https://thetourvilles.com/" target="_blank">
-                                            A Webpage to Display Chosen Christmas Charity Donations for 2022
-                                        </a>
-                                    </h3>
-                                    <div class="tokyo_tm_read_more">
-                                        <a href="https://github.com/embmeals/ChristmasCharities" target="_blank">
-                                            <span>Github repo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list_inner">
-                                    <div class="image portfolioGif" style="height: 250px">
-                                        <img src="project-gifs/weblow.io.png" alt="Webflow portfolio site screenshot"/>
-                                        <div class="main" data-img-url="project-gifs/webflow.io.png"></div>
-                                    </div>
-                                    <div class="details portfolio-caption">
-                                        <h3 class="title">
-                                            <a href="https://mills-codes.webflow.io/" target="_blank">
-                                                Webflow.io website for fun
-                                            </a>
-                                        </h3>
-                                        <div class="tokyo_tm_read_more">
-                                            <a href="https://mills-codes.webflow.io/" target="_blank">
-                                                <span>Webflow website</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <footer></footer>
             <div class="tokyo_tm_modalbox_about">
                 <div class="box_inner">
                     <div class="close">
-                        <a href="#">
-                            <img class="svg close" src="img/svg/cancel.svg" alt="Close modal"/>
-                        </a>
+                        <a href="#"><i class="icon-cancel"></i></a>
                     </div>
                     <div class="description_wrap">
                         <div class="my_box">
@@ -488,15 +674,31 @@
                                 </div>
                                 <div class="tokyo_progress">
                                     <div class="progress_inner">
-                            <span>
-                                <img src="img/svg/icons8/icons8-html-5-48.svg" role="img" alt="HTML5 icon"/>
-                                <img src="img/svg/icons8/icons8-css3.svg" role="img" alt="CSS3 icon"/>
-                                <img src="img/svg/icons8/icons8-javascript.svg" role="img" alt="JavaScript icon"/>
-                                <img src="img/svg/icons8/icons8-vue-js-48.svg" role="img" alt="Vue.js icon"/>
-                                <img src="img/svg/icons8/icons8-jquery.png" role="img" alt="jQuery icon"/>
-                                <img src="img/svg/icons8/icons8-bootstrap.svg" role="img" alt="Bootstrap icon"/>
-                                <img src="img/svg/icons8/icons8-react.svg" role="img" alt="React icon"/>
-                            </span>
+                                        <span>
+                                            <img
+                                                src="img/svg/icons8/icons8-html-5-48.svg"
+                                                role="img"
+                                                alt="HTML5 icon"
+                                            />
+                                            <img src="img/svg/icons8/icons8-css3.svg" role="img" alt="CSS3 icon" />
+                                            <img
+                                                src="img/svg/icons8/icons8-javascript.svg"
+                                                role="img"
+                                                alt="JavaScript icon"
+                                            />
+                                            <img
+                                                src="img/svg/icons8/icons8-vue-js-48.svg"
+                                                role="img"
+                                                alt="Vue.js icon"
+                                            />
+                                            <img src="img/svg/icons8/icons8-jquery.png" role="img" alt="jQuery icon" />
+                                            <img
+                                                src="img/svg/icons8/icons8-bootstrap.svg"
+                                                role="img"
+                                                alt="Bootstrap icon"
+                                            />
+                                            <img src="img/svg/icons8/icons8-react.svg" role="img" alt="React icon" />
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -506,29 +708,57 @@
                                 </div>
                                 <div class="tokyo_progress">
                                     <div class="progress_inner">
-                            <span>
-                                <img src="img/svg/icons8/icons8-c-sharp-logo-96.svg" role="img" alt="C# icon"/>
-                                <img src="https://img.icons8.com/color/48/c-plus-plus-logo.png" role="img"
-                                     alt="C++ icon"/>
-                                <img src="img/svg/icons8/icons8-sql-64.png" role="img" alt="SQL icon"/>
-                                <img src="img/svg/icons8/icons8-json-48.png" role="img" alt="JSON icon"/>
-                                <img src="img/svg/icons8/icons8-rest-api-100.png" role="img" alt="REST API icon"/>
-                                <img src="img/svg/icons8/icons8-xml-file-64.png" role="img" alt="XML file icon"/>
-                            </span>
-                                        <br/>
                                         <span>
-                                <div class="about_title">
-                                    <h3>Tools</h3>
-                                </div>
-                                <img src="img/svg/icons8/icons8-visual-studio.svg" role="img" alt="Visual Studio icon"/>
-                                <img src="img/svg/icons8/icons8-git.svg" role="img" alt="Git icon"/>
-                                <img src="img/svg/icons8/icons8-adobe-illustrator.svg" role="img"
-                                     alt="Adobe Illustrator icon"/>
-                                <img src="img/svg/icons8/icons8-atlassian-confluence.svg" role="img"
-                                     alt="Atlassian Confluence icon"/>
-                                <img src="img/svg/icons8/icons8-visual-studio-code-2019.svg" role="img"
-                                     alt="VS Code icon"/>
-                            </span>
+                                            <img
+                                                src="img/svg/icons8/icons8-c-sharp-logo-96.svg"
+                                                role="img"
+                                                alt="C# icon"
+                                            />
+                                            <img
+                                                src="https://img.icons8.com/color/48/c-plus-plus-logo.png"
+                                                role="img"
+                                                alt="C++ icon"
+                                            />
+                                            <img src="img/svg/icons8/icons8-sql-64.png" role="img" alt="SQL icon" />
+                                            <img src="img/svg/icons8/icons8-json-48.png" role="img" alt="JSON icon" />
+                                            <img
+                                                src="img/svg/icons8/icons8-rest-api-100.png"
+                                                role="img"
+                                                alt="REST API icon"
+                                            />
+                                            <img
+                                                src="img/svg/icons8/icons8-xml-file-64.png"
+                                                role="img"
+                                                alt="XML file icon"
+                                            />
+                                        </span>
+                                        <br />
+                                        <span>
+                                            <div class="about_title">
+                                                <h3>Tools</h3>
+                                            </div>
+                                            <img
+                                                src="img/svg/icons8/icons8-visual-studio.svg"
+                                                role="img"
+                                                alt="Visual Studio icon"
+                                            />
+                                            <img src="img/svg/icons8/icons8-git.svg" role="img" alt="Git icon" />
+                                            <img
+                                                src="img/svg/icons8/icons8-adobe-illustrator.svg"
+                                                role="img"
+                                                alt="Adobe Illustrator icon"
+                                            />
+                                            <img
+                                                src="img/svg/icons8/icons8-atlassian-confluence.svg"
+                                                role="img"
+                                                alt="Atlassian Confluence icon"
+                                            />
+                                            <img
+                                                src="img/svg/icons8/icons8-visual-studio-code-2019.svg"
+                                                role="img"
+                                                alt="VS Code icon"
+                                            />
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -540,59 +770,66 @@
                             <ul>
                                 <li>
                                     <div class="list_inner">
-                                        <span class="name">Amateur Artist</span><br/>
+                                        <span class="name">Amateur Artist</span><br />
                                         <span>
-                                <img src="img/svg/icons8/icons8-art-60.png" role="img" alt="Art icon"/>
-                            </span>
+                                            <img src="img/svg/icons8/icons8-art-60.png" role="img" alt="Art icon" />
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="list_inner">
-                                        <span class="name">Proud Pomchi Parent</span><br/>
+                                        <span class="name">Proud Pomchi Parent</span><br />
                                         <span>
-                                <img src="img/svg/icons8/icons8-pomeranian-64.png" role="img" alt="Pomeranian icon"/>
-                            </span>
+                                            <img
+                                                src="img/svg/icons8/icons8-pomeranian-64.png"
+                                                role="img"
+                                                alt="Pomeranian icon"
+                                            />
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="list_inner">
-                                        <span class="name">Avid Gamer</span><br/>
+                                        <span class="name">Avid Gamer</span><br />
                                         <span>
-                                <img src="img/svg/icons8/icons8-xbox-controller-48.png" role="img"
-                                     alt="Xbox controller icon"/>
-                            </span>
+                                            <img
+                                                src="img/svg/icons8/icons8-xbox-controller-48.png"
+                                                role="img"
+                                                alt="Xbox controller icon"
+                                            />
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="list_inner">
-                                        <span class="name">Virgo</span><br/>
+                                        <span class="name">Virgo</span><br />
                                         <span>
-                                <img src="img/svg/icons8/icons8-virgo-48.png" role="img" alt="Virgo icon"/>
-                            </span>
+                                            <img src="img/svg/icons8/icons8-virgo-48.png" role="img" alt="Virgo icon" />
+                                        </span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="list_inner">
-                                        <span class="name">Lover of Bicycles</span><br/>
+                                        <span class="name">Lover of Bicycles</span><br />
                                         <span>
-                                <img src="img/svg/icons8/icons8-bicycle-48.png" role="img" alt="Bicycle icon"/>
-                            </span>
+                                            <img
+                                                src="img/svg/icons8/icons8-bicycle-48.png"
+                                                role="img"
+                                                alt="Bicycle icon"
+                                            />
+                                        </span>
                                     </div>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="mouse-cursor cursor-outer"></div>
-    <div class="mouse-cursor cursor-inner"></div>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/init.js"></script>
-</div>
-</body>
+            <script src="js/jquery.js"></script>
+            <script src="js/JavaScript.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/app.js"></script>
+        </div>
+    </body>
 </html>
