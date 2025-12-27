@@ -34,28 +34,6 @@
         },
     };
 
-    /**
-     * Style Injector Module
-     * Responsible for dynamic CSS injection
-     */
-    const StyleInjector = {
-        inject(cssString) {
-            if (!cssString || typeof cssString !== "string") {
-                return;
-            }
-
-            const styleElement = document.createElement("style");
-            styleElement.type = "text/css";
-
-            if (styleElement.styleSheet) {
-                styleElement.styleSheet.cssText = cssString;
-            } else {
-                styleElement.appendChild(document.createTextNode(cssString));
-            }
-
-            document.head.appendChild(styleElement);
-        },
-    };
 
     /**
      * Modal Manager Module
@@ -379,61 +357,6 @@
         },
     };
 
-    /**
-     * Content Filter Manager
-     * Handles NSFW content filtering
-     */
-    const ContentFilterManager = {
-        initialize() {
-            this.attachNsfwHandlers();
-        },
-
-        attachNsfwHandlers() {
-            const self = this;
-
-            $("[data-nsfw-open]").on("click", (e) => {
-                e.preventDefault();
-                const href = $(e.currentTarget).attr("href");
-                const $folder = $(e.currentTarget).closest(".folder.gallery_zoom");
-                self.queueNsfwOpen($folder, href);
-                self.showNsfwDisclaimer();
-            });
-
-            $("[data-nsfw-accept]").on("click", () => {
-                this.acceptNsfwContent();
-            });
-
-            $("[data-nsfw-cancel]").on("click", () => {
-                this.cancelNsfwContent();
-            });
-        },
-
-        queueNsfwOpen($folder, href) {
-            this._nsfwPending = {
-                folder: $folder && $folder.length ? $folder : null,
-                href: href || null,
-            };
-        },
-
-        showNsfwDisclaimer() {
-            $("#nsfw_disclaimer").attr("aria-hidden", "false");
-        },
-
-        acceptNsfwContent() {
-            $("#nsfw_disclaimer").attr("aria-hidden", "true");
-
-            if (this._nsfwPending && this._nsfwPending.folder) {
-                GalleryPopupManager.openFolderGallery(this._nsfwPending.folder, this._nsfwPending.href);
-            }
-
-            this._nsfwPending = null;
-        },
-
-        cancelNsfwContent() {
-            $("#nsfw_disclaimer").attr("aria-hidden", "true");
-            this._nsfwPending = null;
-        },
-    };
 
     /**
      * Gallery Popup Manager
@@ -445,8 +368,8 @@
         },
 
         attachFolderOpenHandlers() {
-            // Non-NSFW folders: open gallery immediately.
-            $(".folder.gallery_zoom").on("click", "a.open-btn:not([data-nsfw-open])", (event) => {
+            // All folders: open gallery immediately.
+            $(".folder.gallery_zoom").on("click", "a.open-btn", (event) => {
                 event.preventDefault();
                 const $folder = $(event.currentTarget).closest(".folder.gallery_zoom");
                 const href = $(event.currentTarget).attr("href");
@@ -551,17 +474,11 @@
      */
     const AppInitializer = {
         initialize() {
-            this.injectStyles();
             this.attachWindowLoadHandler();
             this.initializeModules();
         },
 
-        injectStyles() {
-            if (typeof styles === "string") {
-                StyleInjector.inject(styles);
-            }
-        },
-
+        
         attachWindowLoadHandler() {
             AppConfig.selectors.window.on("load", () => {
                 // Post-load initialization if needed
@@ -577,8 +494,7 @@
             CustomCursorController.initialize();
             ImageHandler.initialize();
             GalleryPopupManager.initialize();
-            ContentFilterManager.initialize();
-        },
+                    },
     };
 
     /**
