@@ -36,6 +36,7 @@
     align-items: center;
     justify-content: center;
     transition: opacity 0.5s ease-in-out;
+    animation: hidePreloader 4s ease-in-out forwards;
 }
 
 #preloader.hidden {
@@ -55,10 +56,6 @@
         opacity: 0;
         visibility: hidden;
     }
-}
-
-#preloader {
-    animation: hidePreloader 4s ease-in-out forwards;
 }
 
 #preloader.loaded {
