@@ -1,5 +1,9 @@
 # Ember Mills - Personal Portfolio Website
 
+[![Lint Status](https://github.com/embmeals/embmeals.github.io/actions/workflows/super-linter.yml/badge.svg)](https://github.com/embmeals/embmeals.github.io/actions/workflows/super-linter.yml)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.emills.net&label=emills.net)](https://www.emills.net)
+[![GitHub release](https://img.shields.io/github/v/tag/embmeals/embmeals.github.io?label=version)](https://github.com/embmeals/embmeals.github.io/releases)
+
 A modern, SEO-optimized personal portfolio website built with clean code principles following Robert C Martin's guidelines.
 
 ## 🚀 Features & Improvements
@@ -232,6 +236,6 @@ This project is private and proprietary. All rights reserved.
 
 ---
 
-**Last Updated**: December 2024  
-**Version**: 2.0 (Modernized)  
+**Last Updated**: January 2026
+**Version**: 1.0.0
 **Author**: Ember Mills
