@@ -44,7 +44,7 @@
             <div class="tokyo_tm_modalbox">
                 <div class="box_inner">
                     <div class="close">
-                        <a href="#"><i class="icon-cancel"></i></a>
+                        <button type="button" aria-label="Close modal"><i class="icon-cancel" aria-hidden="true"></i></button>
                     </div>
                     <div class="description_wrap"></div>
                 </div>
@@ -61,7 +61,7 @@
         },
 
         attachCloseHandlers() {
-            $(document).on("click", ".tokyo_tm_modalbox .close a", function (e) {
+            $(document).on("click", ".tokyo_tm_modalbox .close button", function (e) {
                 e.preventDefault();
                 $(".tokyo_tm_modalbox").removeClass("opened");
             });
@@ -234,14 +234,14 @@
         },
 
         attachOpenHandler() {
-            $(document).on("click", "a.custom-btn.btn-15", (event) => {
+            $(document).on("click", ".custom-btn.btn-15", (event) => {
                 event.preventDefault();
                 $(".tokyo_tm_modalbox_about").addClass("opened");
             });
         },
 
         attachCloseHandlers() {
-            $(document).on("click", ".tokyo_tm_modalbox_about .close a", (event) => {
+            $(document).on("click", ".tokyo_tm_modalbox_about .close button", (event) => {
                 event.preventDefault();
                 $(".tokyo_tm_modalbox_about").removeClass("opened");
             });
