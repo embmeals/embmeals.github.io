@@ -1,6 +1,25 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+# Dependencies
+node_modules/
 
-/.vs/embmeals.github.io/FileContentIndex/65776057-2119-483e-8f39-64bc5aaea00d.vsidx
-/.gitignore
+# IDE / Editor
+.vs/
+.idea/
+*.swp
+*.swo
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.log
+npm-debug.log*
+
+# Backup files
+*.bak
+*.backup
+
+# Environment
+.env
+.env.local
