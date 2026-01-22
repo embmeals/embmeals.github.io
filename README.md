@@ -1,3 +1,12 @@
+```
+    ███████╗███╗   ███╗██╗██╗     ██╗     ███████╗
+    ██╔════╝████╗ ████║██║██║     ██║     ██╔════╝
+    █████╗  ██╔████╔██║██║██║     ██║     ███████╗
+    ██╔══╝  ██║╚██╔╝██║██║██║     ██║     ╚════██║
+    ███████╗██║ ╚═╝ ██║██║███████╗███████╗███████║
+    ╚══════╝╚═╝     ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
+```
+
 # Ember Mills - Personal Portfolio
 
 [![Lint Status](https://github.com/embmeals/embmeals.github.io/actions/workflows/super-linter.yml/badge.svg)](https://github.com/embmeals/embmeals.github.io/actions/workflows/super-linter.yml)
