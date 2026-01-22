@@ -33,3 +33,6 @@ jobs:
           VALIDATE_HTML: true
           VALIDATE_CSS: true
           VALIDATE_JAVASCRIPT_ES: true
+          # Use our local config files
+          LINTER_RULES_PATH: "."
+          HTML_FILE_NAME: ".htmlhintrc"
