@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Body -->
+  <ellipse cx="24" cy="28" rx="10" ry="12" fill="#333"/>
+  <!-- Belly -->
+  <ellipse cx="24" cy="30" rx="7" ry="9" fill="#F5CE42"/>
+  <!-- Head -->
+  <ellipse cx="24" cy="14" rx="8" ry="7" fill="#F5CE42"/>
+  <!-- Eyes -->
+  <ellipse cx="21" cy="13" rx="2" ry="2.5" fill="#fff"/>
+  <ellipse cx="27" cy="13" rx="2" ry="2.5" fill="#fff"/>
+  <circle cx="21.5" cy="13" r="1" fill="#000"/>
+  <circle cx="27.5" cy="13" r="1" fill="#000"/>
+  <!-- Beak -->
+  <path d="M22 17l2 2.5 2-2.5z" fill="#E8890C"/>
+  <!-- Feet -->
+  <path d="M16 39c-1 0-3 1-4 1.5s-1 1.5.5 1.5h5c1 0 1.5-.5 1.5-1.5V39h-3z" fill="#E8890C"/>
+  <path d="M29 39v1.5c0 1 .5 1.5 1.5 1.5h5c1.5 0 1.5-1 .5-1.5S33 39 32 39h-3z" fill="#E8890C"/>
+</svg>

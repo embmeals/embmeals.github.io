@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <circle cx="24" cy="24" r="20" fill="#512BD4"/>
+  <!-- Dot -->
+  <circle cx="10.5" cy="35.5" r="2.2" fill="#fff"/>
+  <!-- N shape -->
+  <path d="M16 35V15h2.8l8.5 13.5V15H30v20h-2.8L18.7 21.5V35H16z" fill="#fff"/>
+  <!-- E -->
+  <path d="M33 15h8v2.5h-5.3v5h4.8v2.5h-4.8v5H41V35h-8V15z" fill="#fff"/>
+</svg>

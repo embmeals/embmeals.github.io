@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="jiraGrad1" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2684FF"/>
+      <stop offset="100%" stop-color="#0052CC"/>
+    </linearGradient>
+    <linearGradient id="jiraGrad2" x1="1" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2684FF"/>
+      <stop offset="100%" stop-color="#0052CC"/>
+    </linearGradient>
+  </defs>
+  <path d="M43 22.8L25.2 5 24 3.8 10.4 17.4l-5.4 5.4a1.5 1.5 0 0 0 0 2.1L17.6 37.6 24 44.2l13.6-13.6.8-.8L43 25a1.5 1.5 0 0 0 0-2.2zM24 30.5L17.5 24 24 17.5 30.5 24 24 30.5z" fill="#2684FF"/>
+  <path d="M24 17.5c-4.2-4.2-4.3-11-.1-15.2L10.3 15.9l7.1 7.1L24 17.5z" fill="url(#jiraGrad1)"/>
+  <path d="M30.5 24L24 30.5c4.2 4.2 4.2 11.1 0 15.3l13.6-13.6L30.5 24z" fill="url(#jiraGrad2)"/>
+</svg>

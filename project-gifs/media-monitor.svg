@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00b894"/>
+      <stop offset="100%" stop-color="#00cec9"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0984e3"/>
+      <stop offset="100%" stop-color="#74b9ff"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6c5ce7"/>
+      <stop offset="100%" stop-color="#a29bfe"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" fill="#dfe6e9" font-size="20" font-weight="600">Media Pipeline Monitor</text>
+  <text x="400" y="62" text-anchor="middle" fill="#636e72" font-size="12">11 checks &middot; 3 phases &middot; auto-remediation</text>
+
+  <!-- Phase 1: Infrastructure -->
+  <rect x="30" y="85" width="230" height="170" rx="8" fill="none" stroke="url(#green)" stroke-width="1.5" opacity="0.7"/>
+  <text x="145" y="108" text-anchor="middle" fill="#00cec9" font-size="13" font-weight="600">Infrastructure</text>
+  <text x="50" y="132" fill="#b2bec3" font-size="11">Drive Mounted</text>
+  <circle cx="210" cy="128" r="5" fill="#00b894"/>
+  <text x="50" y="154" fill="#b2bec3" font-size="11">Disk Space</text>
+  <circle cx="210" cy="150" r="5" fill="#00b894"/>
+  <text x="50" y="176" fill="#b2bec3" font-size="11">Services (7)</text>
+  <circle cx="210" cy="172" r="5" fill="#00b894"/>
+  <text x="50" y="198" fill="#b2bec3" font-size="11">qBittorrent</text>
+  <circle cx="210" cy="194" r="5" fill="#00b894"/>
+  <text x="50" y="235" fill="#636e72" font-size="10">Plex &middot; Radarr &middot; Sonarr</text>
+  <text x="50" y="248" fill="#636e72" font-size="10">Prowlarr &middot; Syncthing &middot; Tor</text>
+
+  <!-- Phase 2: Pipeline -->
+  <rect x="285" y="85" width="230" height="170" rx="8" fill="none" stroke="url(#blue)" stroke-width="1.5" opacity="0.7"/>
+  <text x="400" y="108" text-anchor="middle" fill="#74b9ff" font-size="13" font-weight="600">Pipeline</text>
+  <text x="305" y="132" fill="#b2bec3" font-size="11">Save Path</text>
+  <circle cx="465" cy="128" r="5" fill="#00b894"/>
+  <text x="305" y="154" fill="#b2bec3" font-size="11">Torrent Health</text>
+  <circle cx="465" cy="150" r="5" fill="#00b894"/>
+  <text x="305" y="176" fill="#b2bec3" font-size="11">Syncthing Sync</text>
+  <circle cx="465" cy="172" r="5" fill="#00b894"/>
+  <text x="305" y="198" fill="#b2bec3" font-size="11">Arr Queues</text>
+  <circle cx="465" cy="194" r="5" fill="#00b894"/>
+  <text x="305" y="220" fill="#b2bec3" font-size="11">Stale Downloads</text>
+  <circle cx="465" cy="216" r="5" fill="#00b894"/>
+
+  <!-- Phase 3: Content -->
+  <rect x="540" y="85" width="230" height="170" rx="8" fill="none" stroke="url(#purple)" stroke-width="1.5" opacity="0.7"/>
+  <text x="655" y="108" text-anchor="middle" fill="#a29bfe" font-size="13" font-weight="600">Content</text>
+  <text x="560" y="132" fill="#b2bec3" font-size="11">DNS Health</text>
+  <circle cx="720" cy="128" r="5" fill="#00b894"/>
+  <text x="560" y="154" fill="#b2bec3" font-size="11">Plex Libraries</text>
+  <circle cx="720" cy="150" r="5" fill="#00b894"/>
+
+  <!-- Auto-remediation bar -->
+  <rect x="30" y="280" width="740" height="50" rx="8" fill="#2d3436" opacity="0.6"/>
+  <text x="400" y="302" text-anchor="middle" fill="#fdcb6e" font-size="12" font-weight="600">Auto-Remediation</text>
+  <text x="400" y="320" text-anchor="middle" fill="#636e72" font-size="10">Fix save paths &middot; Rescan Syncthing &middot; Flush DNS &middot; Restart services</text>
+
+  <!-- Status bar -->
+  <rect x="30" y="345" width="740" height="35" rx="8" fill="#00b894" opacity="0.15"/>
+  <circle cx="55" cy="362" r="6" fill="#00b894"/>
+  <text x="72" y="367" fill="#00b894" font-size="13" font-weight="600">OK</text>
+  <text x="110" y="367" fill="#b2bec3" font-size="12">11/11 checks passed</text>
+  <text x="680" y="367" fill="#636e72" font-size="11">Python 3 &middot; stdlib only</text>
+</svg>
