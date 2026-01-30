@@ -474,8 +474,7 @@ body {
     float: none;
 }
 
-/* Override box_inner: replace transform centering with margin centering
-   to avoid compositing bug where scrolling up repaints stale content */
+/* Fix desktop scroll duplication in about modal */
 .tokyo_tm_modalbox_about .box_inner {
     transform: none;
     margin-left: auto;
@@ -484,6 +483,9 @@ body {
     right: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    isolation: isolate;
 }
 
 .tokyo_tm_modalbox_about.opened .box_inner {
@@ -493,6 +495,20 @@ body {
 .tokyo_tm_modalbox_about .description_wrap {
     overflow: visible;
     height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.tokyo_tm_modalbox_about .my_box {
+    position: relative;
+    z-index: 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.tokyo_tm_modalbox_about .progress_inner img {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .tokyo_tm_modalbox_about .progress_inner {
