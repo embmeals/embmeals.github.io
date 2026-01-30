@@ -474,18 +474,25 @@ body {
     float: none;
 }
 
-/* Fix desktop scroll duplication in about modal */
+/* Fix desktop scroll duplication in about modal (Opera/Chromium).
+   Replace position:absolute centering with flex centering to avoid
+   compositing bug with scrollable absolute-positioned containers. */
+.tokyo_tm_modalbox_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+}
+
 .tokyo_tm_modalbox_about .box_inner {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
     transform: none;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    isolation: isolate;
 }
 
 .tokyo_tm_modalbox_about.opened .box_inner {
@@ -495,20 +502,6 @@ body {
 .tokyo_tm_modalbox_about .description_wrap {
     overflow: visible;
     height: auto;
-    position: relative;
-    z-index: 1;
-}
-
-.tokyo_tm_modalbox_about .my_box {
-    position: relative;
-    z-index: 1;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-}
-
-.tokyo_tm_modalbox_about .progress_inner img {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
 }
 
 .tokyo_tm_modalbox_about .progress_inner {
