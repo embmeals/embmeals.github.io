@@ -1297,6 +1297,7 @@ h6 {
 .progress_inner img {
     height: 32px;
     border-radius: 6px;
+    margin: 3px 4px;
 }
 
 .tokyo_tm_modalbox .details_all_wrap {
@@ -4006,6 +4007,7 @@ h6 {
 .progress_inner img {
     height: 32px;
     border-radius: 6px;
+    margin: 3px 4px;
 }
 
 .tokyo_tm_modalbox .details_all_wrap {
