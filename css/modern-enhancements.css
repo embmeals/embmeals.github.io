@@ -463,8 +463,14 @@ body {
     color: var(--primary-color);
 }
 
-/* Fix about modal scroll duplication: clear floats inside flex container */
+/* Fix about modal: remove floats (cause scroll duplication), tighten spacing */
 .tokyo_tm_modalbox_about .tokyo_progress {
+    float: none;
+    padding-top: 8px;
+}
+
+.tokyo_tm_modalbox_about .my_box .left,
+.tokyo_tm_modalbox_about .my_box .right {
     float: none;
 }
 
@@ -472,6 +478,22 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+}
+
+.tokyo_tm_modalbox_about .progress_inner {
+    margin-bottom: 8px;
+}
+
+.tokyo_tm_modalbox_about .progress_inner img {
+    margin: 4px;
+}
+
+.tokyo_tm_modalbox_about .about_title {
+    margin-bottom: 0;
+}
+
+.tokyo_tm_modalbox_about .about_title h3 {
+    margin-bottom: 0;
 }
 
 /* Enhanced Art Gallery */
