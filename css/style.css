@@ -956,7 +956,6 @@ h6 {
     height: auto;
     clear: both;
     float: left;
-    padding-top: 33px;
 }
 
 .progress_inner {
@@ -3667,7 +3666,8 @@ h6 {
     height: auto;
     clear: both;
     float: left;
-    padding-top: 33px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .progress_inner {
