@@ -463,6 +463,17 @@ body {
     color: var(--primary-color);
 }
 
+/* Fix about modal scroll duplication: clear floats inside flex container */
+.tokyo_tm_modalbox_about .tokyo_progress {
+    float: none;
+}
+
+.tokyo_tm_modalbox_about .description_wrap {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 /* Enhanced Art Gallery */
 .art_folders {
     display: grid;
