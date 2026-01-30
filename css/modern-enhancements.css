@@ -358,16 +358,16 @@ body {
 /* Experience Timeline */
 .experience-timeline {
     text-align: left;
-    margin: 1.5rem 0;
+    margin: 2.5rem 0 1rem;
 }
 
 .experience-timeline h4 {
     color: var(--primary-color);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-bottom: 0.75rem;
-    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    margin-top: 2rem;
 }
 
 .experience-timeline h4:first-child {
@@ -378,9 +378,9 @@ body {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
-    gap: 0;
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.75rem;
+    gap: 2px;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -393,19 +393,21 @@ body {
 .timeline-role {
     font-weight: 600;
     color: var(--text-primary);
-    font-size: 0.95rem;
+    font-size: 1.05rem;
 }
 
 .timeline-date {
     color: var(--text-secondary);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     text-align: right;
+    align-self: center;
 }
 
 .timeline-company {
     grid-column: 1 / -1;
     color: var(--text-secondary);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    margin-top: 2px;
 }
 
 /* Enhanced About Section */
