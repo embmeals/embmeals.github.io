@@ -478,6 +478,8 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    transform: translateZ(0);
 }
 
 .tokyo_tm_modalbox_about .progress_inner {
